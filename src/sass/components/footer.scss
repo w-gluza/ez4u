@@ -1,0 +1,47 @@
+.footer {
+    background-color: $color-grey-light;
+    padding-bottom: 0px;
+}
+
+.footer__container {
+    display: grid;
+    grid-gap: 3rem;
+}
+
+
+.footer__sections {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-gap: 2rem;
+    padding: 8rem;
+
+}
+
+.footer__socialmedia {
+    font-weight: 100;
+    bottom:0;
+    background-color: $color-white;
+
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    padding: 1rem 8rem;
+    grid-template-columns: 30fr 1fr 1fr 1fr;
+    grid-gap: 0.5rem;
+
+
+
+}
+
+.icon__social {
+    height: 2rem;
+    justify-self: center;
+}
+
+
+/// moce it to nav!!!
+
+.App-logo {
+    height: 50px;
+    fill: red;
+}
