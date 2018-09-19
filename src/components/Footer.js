@@ -4,6 +4,8 @@ import FBlogo from '../assets/icons/fb-logo.svg';
 import YTlogo from '../assets/icons/linked-in-logo.svg';
 import LIlogo from '../assets/icons/youtube-logo.svg';
 
+import Icon from '../assets/icons/';
+
 
 
 const footer = () => {
@@ -53,10 +55,10 @@ const footer = () => {
             </div>
             <div className="footer__socialmedia">
                      <p>© 2018 EZ4U. All rights reserved.</p>
-                      <a href="https://www.facebook.com/ez4uteam/"><img src={FBlogo} className="icon__social" alt="Facebook logo" /></a>
-                      <a href="https://www.youtube.com/user/ez4uteam"><img src={LIlogo} className="icon__social" alt="LinkedIn logo" /></a>
-                      <a href="https://www.linkedin.com/company/ez4u/"><img src={YTlogo} className="icon__social" alt="YouTube logo" /></a>
 
+                      <a href="https://www.facebook.com/ez4uteam/"><img src={FBlogo} className="icon__social" alt="Facebook logo" /></a>
+                      <a href="https://www.youtube.com/user/ez4uteam"><Icon name="youtube" className="icon__social" alt="LinkedIn logo"/></a>
+                      <a href="https://www.linkedin.com/company/ez4u/"><Icon fill="#49c" width={50} name="linkedin" /></a>
             </div>
         </div>
 
