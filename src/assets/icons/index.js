@@ -1,4 +1,5 @@
 import React from "react";
+import "../../css/style.css";
 
 import Facebook from "./Facebook";
 import YouTube from "./YouTube";
@@ -7,11 +8,11 @@ import LinkedIn from "./LinkedIn";
 const Icon = props => {
   switch (props.name) {
     case "facebook":
-    return <Facebook {...props} />;
+      return <Facebook {...props} />;
     case "youtube":
       return <YouTube {...props} />;
     case "linkedin":
-    return <LinkedIn {...props} />;
+      return <LinkedIn {...props} />;
     default:
       return;
   }

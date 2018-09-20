@@ -2,7 +2,7 @@ import React from "react";
 
 const SVG = ({
   style = {},
-  fill = "#000",
+  fill = "",
   width = "100%",
   height = "100%",
   className = "",

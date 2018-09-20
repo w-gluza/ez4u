@@ -1,7 +1,6 @@
 import React from "react";
-
 import FBlogo from "../assets/icons/fb-logo.svg";
-
+import "../css/style.css";
 import Icon from "../assets/icons/";
 
 const footer = () => {
@@ -53,13 +52,21 @@ const footer = () => {
           <p>© 2018 EZ4U. All rights reserved.</p>
 
           <a href="https://www.facebook.com/ez4uteam/">
-            <img src={FBlogo} className="icon__social" alt="Facebook logo" />
+            <Icon
+              name="facebook"
+              className="icon__social"
+              alt="Facebook logo"
+            />
           </a>
           <a href="https://www.youtube.com/user/ez4uteam">
-            <Icon name="youtube" className="icon__social" alt="LinkedIn logo" />
+            <Icon name="youtube" className="icon__social" alt="YouTube logo" />
           </a>
           <a href="https://www.linkedin.com/company/ez4u/">
-            <Icon fill="#49c" width={50} name="linkedin" />
+            <Icon
+              name="linkedin"
+              className="icon__social"
+              alt="LinkedIn logo"
+            />
           </a>
         </div>
       </div>
