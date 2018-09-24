@@ -1,5 +1,4 @@
 import React from "react";
-import FBlogo from "../assets/icons/fb-logo.svg";
 import "../css/style.css";
 import Icon from "../assets/icons/";
 
@@ -48,7 +47,7 @@ const footer = () => {
             </ul>
           </div>
         </div>
-        <div className="footer__socialmedia">
+        <div className="footer__footer__container">
           <p>© 2018 EZ4U. All rights reserved.</p>
 
           <a href="https://www.facebook.com/ez4uteam/">

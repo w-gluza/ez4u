@@ -1,0 +1,72 @@
+{
+  "clientsArray": [
+    {
+      "client": "WhatsApp",
+      "image": "/clientsIMG/abreu.png"
+    },
+    {
+      "client": "JumpSeller",
+      "image": ""
+    },
+    {
+      "client": "Outsystems",
+      "image": ""
+    },
+    {
+      "client": "Autarquicas 2017",
+      "image": ""
+    },
+    {
+      "client": "C. Santos VP",
+      "image": ""
+    },
+    {
+      "client": "Abreu",
+      "image": ""
+    },
+    {
+      "client": "Kid to Kid",
+      "image": ""
+    },
+    {
+      "client": "F3M",
+      "image": ""
+    },
+    {
+      "client": "Gocial",
+      "image": ""
+    },
+    {
+      "client": "Primaver",
+      "image": ""
+    },
+    {
+      "client": "AdClick",
+      "image": ""
+    },
+    {
+      "client": "E.Leclerc",
+      "image": ""
+    },
+    {
+      "client": "SmileUp",
+      "image": ""
+    },
+    {
+      "client": "Inter Marche",
+      "image": ""
+    },
+    {
+      "client": "Eleicoes Autarquicas",
+      "image": ""
+    },
+    {
+      "client": "Arcadia",
+      "image": ""
+    },
+    {
+      "client": "Porto City Race",
+      "image": ""
+    }
+  ]
+}

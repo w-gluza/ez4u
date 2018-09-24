@@ -1,20 +1,25 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900');
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900");
 
 body {
-    font-family: $font-primary;
-    font-weight: 400;
-    font-size: 1.4rem;
-    line-height: 1.5;
-    color: $color-black; 
+  font-family: $font-primary;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: $color-black;
 }
 
-.footer__header{
-    font-size: 1.6rem;
-    text-transform: uppercase
+p {
+  font-size: 1.2rem;
+}
+
+.footer__header {
+  font-size: 1.6rem;
+  text-transform: uppercase;
 }
 
 .footer__list {
-    list-style: none;
-    font-weight: 100;
+  font-size: 1.4rem;
+  font-weight: 100;
+  line-height: 1.5;
+  list-style: none;
 }
-

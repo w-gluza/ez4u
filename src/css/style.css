@@ -4,71 +4,60 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
-}
+  box-sizing: inherit; }
 
 html {
-  font-size: 62.5%;
-}
+  font-size: 62.5%; }
 
 body {
   box-sizing: border-box;
-  padding: 0;
-}
+  padding: 0; }
 
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 1.5;
-  color: #212121;
-}
+  color: #212121; }
+
+p {
+  font-size: 1.2rem; }
 
 .footer__header {
   font-size: 1.6rem;
-  text-transform: uppercase;
-}
+  text-transform: uppercase; }
 
 .footer__list {
-  list-style: none;
+  font-size: 1.4rem;
   font-weight: 100;
-}
+  line-height: 1.5;
+  list-style: none; }
 
 .footer {
   background-color: #f5f5f5;
-  padding-bottom: 0px;
-}
-
-.footer__container {
-  display: grid;
-  grid-gap: 3rem;
-}
+  padding-bottom: 0px; }
 
 .footer__sections {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   grid-gap: 2rem;
-  padding: 8rem;
-}
+  padding: 10rem 8rem; }
 
-.footer__socialmedia {
-  font-weight: 100;
+.footer__footer__container {
   bottom: 0;
   background-color: #fff;
+  align-items: center;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-template-columns: minmax(max-content, auto) repeat(3, minmax(min-content, 2rem));
   padding: 1rem 8rem;
-  grid-template-columns: 30fr 1fr 1fr 1fr;
-  grid-gap: 0.5rem;
-}
+  grid-gap: 0.5rem; }
 
 .icon__social {
-  height: 10rem;
-  justify-self: center;
-  fill: pink;
-}
+  height: 3rem;
+  fill: #424242; }
+  .icon__social:hover {
+    fill: #00acc1; }
 
 .App-logo {
   height: 50px;
-  fill: red;
-}
+  fill: grey; }
