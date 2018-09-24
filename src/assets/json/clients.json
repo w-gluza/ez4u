@@ -2,7 +2,7 @@
   "clientsArray": [
     {
       "client": "WhatsApp",
-      "image": "/clientsIMG/abreu.png"
+      "image": "../clientsIMG/abreu.png"
     },
     {
       "client": "JumpSeller",

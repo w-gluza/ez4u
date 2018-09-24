@@ -6,25 +6,19 @@ import Client from "./Client";
 class Clients extends Component {
     render() {
 
-        // const { clientsArray } = this.props;
-        // console.log('ABC', clientsArray);
-        // const clientsList1 = clientsArray.map(clientsArray => {
-        //     return (
-        //         <li>{clientsArray}</li>
-        //     )
-        // })
-        const { data } = this.props;
-        console.log('XYY', data);
-        const clientsList2 = data.map(name => {
+        const { clientsArray } = this.props;
+        const clientsList = clientsArray.clientsArray.map((data, i) => {
             return (
-                <li>{name.name}</li>
+                <div>
+                    <li>{data.client}</li>
+                    <li>{data.image}</li>
+                </div>
             )
         })
 
         return (
             <div>
-                {/* <ul>{clientsList1}</ul> */}
-                <ul>{clientsList2} </ul>
+                <ul>{clientsList}</ul>
                 <Client></Client>
             </div>
         );
