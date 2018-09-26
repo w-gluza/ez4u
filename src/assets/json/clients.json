@@ -1,72 +1,112 @@
 {
-  "clientsArray": [
-    {
-      "client": "WhatsApp",
-      "image": "../clientsIMG/abreu.png"
-    },
-    {
-      "client": "JumpSeller",
-      "image": ""
-    },
-    {
-      "client": "Outsystems",
-      "image": ""
-    },
-    {
-      "client": "Autarquicas 2017",
-      "image": ""
-    },
-    {
-      "client": "C. Santos VP",
-      "image": ""
-    },
-    {
-      "client": "Abreu",
-      "image": ""
-    },
-    {
-      "client": "Kid to Kid",
-      "image": ""
-    },
-    {
-      "client": "F3M",
-      "image": ""
-    },
-    {
-      "client": "Gocial",
-      "image": ""
-    },
-    {
-      "client": "Primaver",
-      "image": ""
-    },
-    {
-      "client": "AdClick",
-      "image": ""
-    },
-    {
-      "client": "E.Leclerc",
-      "image": ""
-    },
-    {
-      "client": "SmileUp",
-      "image": ""
-    },
-    {
-      "client": "Inter Marche",
-      "image": ""
-    },
-    {
-      "client": "Eleicoes Autarquicas",
-      "image": ""
-    },
-    {
-      "client": "Arcadia",
-      "image": ""
-    },
-    {
-      "client": "Porto City Race",
-      "image": ""
-    }
-  ]
+    "clientsArray": [
+        {
+            "id": "0",
+            "name": "Portugal City Race",
+            "image": "./Images/clientsIMG/0_portocityrace.png",
+            "altIMG": "Porto City Race Logo"
+        },
+        {
+            "id": "1",
+            "name": "Arcadia",
+            "image": "./Images/clientsIMG/1_arcadia.png",
+            "altIMG": "Arcadia Logo"
+        },
+        {
+            "id": "2",
+            "name": "Gamobar",
+            "image": "./Images/clientsIMG/2_gamobar.png",
+            "altIMG": "Gamobar Logo"
+        },
+        {
+            "id": "3",
+            "name": "Inter Marche",
+            "image": "./Images/clientsIMG/3_intermarche.png",
+            "altIMG": "Inter Marche Logo"
+        },
+        {
+            "id": "4",
+            "name": "SmileUp",
+            "image": "./Images/clientsIMG/4_smileup.png",
+            "altIMG": "SmileUp Logo"
+        },
+        {
+            "id": "5",
+            "name": "E.Leclerc",
+            "image": "./Images/clientsIMG/5_eleclerc.png",
+            "altIMG": "E.Leclerc Logo"
+        },
+        {
+            "id": "6",
+            "name": "AdClick",
+            "image": "./Images/clientsIMG/6_adclick.png",
+            "altIMG": "AdClick Logo"
+        },
+        {
+            "id": "7",
+            "name": "Primavera",
+            "image": "./Images/clientsIMG/7_primavera.png",
+            "altIMG": "Primaver Logo"
+        },
+        {
+            "id": "8",
+            "name": "Gamobar",
+            "image": "./Images/clientsIMG/8_gocial.png",
+            "altIMG": "Gamobar Logo"
+        },
+        {
+            "id": "9",
+            "name": "F3M",
+            "image": "./Images/clientsIMG/9_f3m.png",
+            "altIMG": "F3M Logo"
+        },
+        {
+            "id": "10",
+            "name": "Kid to Kid",
+            "image": "./Images/clientsIMG/10_kidtokid.png",
+            "altIMG": "Kid to Kid Logo"
+        },
+        {
+            "id": "11",
+            "name": "Abreu",
+            "image": "./Images/clientsIMG/11_abreu.png",
+            "altIMG": "Abreu Logo"
+        },
+        {
+            "id": "12",
+            "name": "C. Santos VP",
+            "image": "./Images/clientsIMG/12_santos.png",
+            "altIMG": "C. Santos VP Logo"
+        },
+        {
+            "id": "13",
+            "name": "Autarquicas 2017",
+            "image": "./Images/clientsIMG/13_eleicoes.png",
+            "altIMG": "Autarquicas 2017 Logo"
+        },
+        {
+            "id": "14",
+            "name": "Euronics",
+            "image": "./Images/clientsIMG/14_euronics.png",
+            "altIMG": "Euronics Logo"
+        },
+        {
+            "id": "15",
+            "name": "Outsystems",
+            "image": "./Images/clientsIMG/15_outsystems.png",
+            "altIMG": "Outsystems Logo"
+        },
+        {
+            "id": "16",
+            "name": "JumpSeller",
+            "image": "./Images/clientsIMG/16_jumpseller.png",
+            "altIMG": "JumpSeller Logo"
+        },
+        {
+            "id": "17",
+            "name": "WhatsApp",
+            "image": "./Images/clientsIMG/17_whatsapp.png",
+            "altIMG": "WhatsApp Logo"
+        }
+    ]
 }
