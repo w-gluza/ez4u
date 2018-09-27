@@ -16,3 +16,21 @@ body {
     box-sizing: border-box;
     padding: 0;
 }
+
+.navbar,
+.navbar___languages,
+.clients,
+.footer__sections,
+.footer__footer__container
+ {
+    padding: 10vh 8vw;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+    color: $color-grey-dark;
+}
+

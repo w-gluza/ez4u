@@ -13,6 +13,20 @@ body {
   box-sizing: border-box;
   padding: 0; }
 
+.navbar,
+.navbar___languages,
+.clients,
+.footer__sections,
+.footer__footer__container {
+  padding: 10vh 8vw; }
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: #424242; }
+
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -33,25 +47,62 @@ p {
   line-height: 1.5;
   list-style: none; }
 
-.testContainer {
+.navbar___languages {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(1rem, 1fr));
+  padding: 0.5rem 8rem 0.5rem 65vw;
+  background-color: #f5f5f5;
+  font-size: 1.5rem;
+  font-weight: 100; }
+
+.navbar___languages a:nth-child(1) {
+  grid-column: 21/22; }
+
+.navbar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  padding: 0.5rem 8rem;
+  background-color: #fff;
+  font-size: 2rem;
+  font-weight: 100;
+  grid-gap: 1rem; }
+
+.navbar__logo {
+  height: 5rem; }
+
+.header {
+  background-color: #00acc1;
+  padding: 30rem; }
+
+.clients {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  padding: 10rem 8rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
   grid-gap: 5rem;
   text-align: center; }
 
 .clients__images {
   height: 3rem; }
 
+.clients__feature--container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  padding: 10rem 8rem;
+  grid-gap: 5rem;
+  text-align: center;
+  background: #424242; }
+
+.clients__images--features {
+  height: 3rem; }
+
 .footer {
-  background-color: #f5f5f5;
-  padding-bottom: 0px; }
+  background-color: #f5f5f5; }
 
 .footer__sections {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  grid-gap: 2rem;
-  padding: 10rem 8rem; }
+  grid-gap: 3vw; }
 
 .footer__footer__container {
   bottom: 0;
@@ -59,7 +110,8 @@ p {
   align-items: center;
   display: grid;
   grid-template-columns: minmax(max-content, auto) repeat(3, minmax(min-content, 2rem));
-  padding: 1rem 8rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   grid-gap: 0.5rem; }
 
 .icon__social {
@@ -67,7 +119,3 @@ p {
   fill: #424242; }
   .icon__social:hover {
     fill: #00acc1; }
-
-.App-logo {
-  height: 50px;
-  fill: grey; }

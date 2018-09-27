@@ -1,13 +1,11 @@
 .footer {
   background-color: $color-grey-light;
-  padding-bottom: 0px;
 }
 
 .footer__sections {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  grid-gap: 2rem;
-  padding: 10rem 8rem;
+  grid-gap: 3vw;
 }
 
 .footer__footer__container {
@@ -20,7 +18,8 @@
       3,
       minmax(min-content, 2rem)
     );
-  padding: 1rem 8rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   grid-gap: 0.5rem;
 }
 
@@ -31,11 +30,4 @@
   &:hover {
     fill: $color-primary;
   }
-}
-
-/// moce it to nav!!!
-
-.App-logo {
-  height: 50px;
-  fill: grey;
 }

@@ -19,7 +19,7 @@ class Clients extends Component {
 
         return (
             <div>
-                <div className="testContainer">{clientsList}</div>
+                <div className="clients">{clientsList}</div>
                 <Client></Client>
             </div >
         );

@@ -1,16 +1,20 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
 
-import Footer from "./containers/Footer";
+import Navbar from "./containers/Navbar";
+import Header from "./containers/Header";
 import Clients from "./components/Clients";
+import Feature from "./components/FeatureClients";
+import Footer from "./containers/Footer";
+
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-
-        <img src={logo} className="App-logo" alt="logo" />
+      <div>
+        <Navbar></Navbar>
+        <Header></Header>
         <Clients data={this.props.data} clientsArray={this.props.clientsArray} />
+        <Feature data={this.props.data} clientsArray={this.props.clientsArray} />
         <Footer />
       </div>
     );
