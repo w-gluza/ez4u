@@ -1,15 +1,34 @@
-@import "abstracts/functions";
-@import "abstracts/mixins";
-@import "abstracts/variables";
+@import "abstracts/abstracts";
 
 @import "base/animations";
 @import "base/base";
 @import "base/typography";
-@import "base/utilities";
 
-@import "components/navbar";
-@import "components/header";
-@import "components/clients";
-@import "components/footer";
+
+// MOBILE ONLY
+@import "../components/Backdrop/Backdrop.scss";
+@import "../components/SideDrawer/SideDrawer.scss";
+@import "../components/SideDrawer/DrawerToggleButton.scss";
+
+
+// DESKTOP
+@import "../components/Navbar/Navbar.scss";
+
+@import "../components/Header/Header.scss";
+
+
+@import "../components/Clients/Clients.scss";
+@import "../components/Clients/FeatureClients.scss";
+
+
+@import "../components/Footer/FooterMain.scss";
+@import "../components/Footer/FooterFooter.scss";
+
+
+
+
+
+
+
 
 

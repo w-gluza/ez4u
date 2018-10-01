@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import "../css/style.css";
+import "../../css/style.css";
 
-import Client from "./Client";
 
 class Clients extends Component {
     render() {
@@ -10,8 +9,6 @@ class Clients extends Component {
         const clientsList = clientsArray.clientsArray.reverse().map((company, i) => {
             return (
                 <div key={company.id}>
-                    {/* <li>{company.name}</li> */}
-                    {/* <img src={require(company.image)} alt={company.altIMG}></img> */}
                     <img className="clients__images" src={company.image} alt={company.altIMG}></img>
                 </div >
             )
@@ -20,7 +17,6 @@ class Clients extends Component {
         return (
             <div>
                 <div className="clients">{clientsList}</div>
-                <Client></Client>
             </div >
         );
     }
