@@ -3,48 +3,86 @@ import "../css/style.css";
 
 // Fisher-Yates Shuffle Algorithm
 function shuffle(arr) {
-    var i,
-        j,
-        temp;
-    for (i = arr.length - 1; i > 0; i--) {
-        j = Math.floor(Math.random() * (i + 1));
-        temp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = temp;
-    }
-    return arr;
-};
+  var newArray = [].concat(arr);
+  var i, j, temp;
+  for (i = newArray.length - 1; i > 0; i--) {
+    j = Math.floor(Math.random() * (i + 1));
+    temp = newArray[i];
+    newArray[i] = newArray[j];
+    newArray[j] = temp;
+  }
+  return newArray;
+}
 
 class Feature extends Component {
-
-
-
-    render() {
-
-        const { clientsArray } = this.props;
-        const ClientsList = clientsArray.clientsArray.map((company, i) => {
-            return (
-                <div key={company.id}>
-                    <img className="clients__images--features" src={company.image} alt={company.altIMG}></img>
-                </div >
-            )
-        })
-
-        // componentDidMount() {
-        //     this.timeout = setInterval(() => {
-        //     }, 1500);
-        // }
-        // componentDidUnmount() {
-        //     clearInterval(this.timeout);
-        // }
-        const shuffleClientsList = shuffle(ClientsList).slice(0, 3);
-
-        return (
-            <div>
-                <div className="clients__feature--container">{shuffleClientsList}</div>
-            </div >
-        );
+  constructor(props) {
+    super(props);
+    this.state = {
+      shuffled: false,
+      currentIndex: 0
+    };
+  }
+  componentDidMount() {
+    const { clientsArray } = this.props;
+    if (!this.state.shuffled) {
+      this.setState({
+        shuffled: shuffle(clientsArray.clientsArray)
+      });
     }
+    setInterval(() => {
+      let nextIndex = this.state.currentIndex + 3;
+      if (nextIndex >= this.state.shuffled.length) {
+        nextIndex = 0;
+      }
+      this.setState({
+        currentIndex: nextIndex
+      });
+    }, 1500);
+  }
+  render() {
+    const { clientsArray } = this.props;
+
+    let ClientsList = [];
+    if (this.state.shuffled) {
+      const nextIndex = this.state.currentIndex + 3;
+      ClientsList = this.state.shuffled
+        .slice(this.state.currentIndex, nextIndex)
+        .map((company, i) => {
+          return (
+            <div key={company.id}>
+              <img
+                className="clients__images--features"
+                src={company.image}
+                alt={company.altIMG}
+              />
+            </div>
+          );
+        });
+    }
+
+    // componentDidMount() {
+    //     this.timeout = setInterval(() => {
+    //     }, 1500);
+    // }
+    // componentDidUnmount() {
+    //     clearInterval(this.timeout);
+    // }
+
+    /*
+    if (this.state.shuffled) {
+      shuffleClientsList = this.state.shuffled.slice(
+        this.state.currentIndex,
+        this.state.currentIndex + 3
+      );
+    }
+    */
+
+    return (
+      <div>
+        <div className="clients__feature--container">{ClientsList}</div>
+      </div>
+    );
+  }
 }
 
 export default Feature;
