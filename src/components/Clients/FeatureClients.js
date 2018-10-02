@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import "../../css/style.css";
 
+
+const speed = 2000;
+
 // Fisher-Yates Shuffle Algorithm
 function shuffle(arr) {
     var newArray = [].concat(arr);
@@ -22,7 +25,6 @@ class Feature extends Component {
             currentIndex: 0
         };
     }
-
     componentDidMount() {
         const { clientsArray } = this.props;
         if (!this.state.shuffled) {
@@ -39,11 +41,10 @@ class Feature extends Component {
             this.setState({
                 currentIndex: nextIndex
             });
-        }, 1500);
+        }, speed);
     }
     render() {
         // const { clientsArray } = this.props;
-
         let ClientsList = [];
         if (this.state.shuffled) {
             const nextIndex = this.state.currentIndex + 3;

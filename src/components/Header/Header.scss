@@ -1,4 +1,22 @@
+// .header {
+//     background-color: $color-primary;
+//     padding-top: 30rem;
+//     padding-bottom: 30rem;
+//     color: $color-white;
+//     font-size: 3rem;
+// }
+
 .header {
-    background-color: $color-primary;
-    padding: 30rem;
+    height: 95vh;
+    background-image: linear-gradient(
+    to right bottom,
+    rgba(193, 222, 244, 0.3),
+    rgba(0, 124, 145, 0.3)),url(https://images.unsplash.com/photo-1519944518895-f08a12d6dfd5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=409a6a69f371e4886d01b4d9fce6fc9a&auto=format&fit=crop&w=1050&q=80);
+    background-size: cover;
+    background-position: top;
+
+    margin-left: 3rem;
+    margin-right: 3rem;
+
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
 }

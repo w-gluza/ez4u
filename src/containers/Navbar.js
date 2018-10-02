@@ -1,30 +1,26 @@
-import React, { Component } from "react";
+import React from "react";
 import "../css/style.css";
 
-import logo from "../logo.svg";
+import NavbarLang from "../components/Navbar/NavbarLang";
+import NavbarMain from "../components/Navbar/NavbarMain";
 
+import Headroom from 'react-headroom';
 
+import DrawerToggleButton from '../components/SideDrawer/DrawerToggleButton';
 
-class Navbar extends Component {
-    render() {
-        return (
-            <nav className="nav">
-                <nav className="navbar___languages">
-                    <a className="navbar__languages__item" href="">pt</a>
-                    <a className="navbar__languages__item" href="">en</a>
-                    <a className="navbar__languages__item" href="">es</a>
-                </nav>
-                <nav className="navbar">
-                    <img src={logo} className="navbar__logo" alt="logo" />
-                    <a className="navbar__item" href="">Home</a>
-                    <a className="navbar__item" href="">Portfolio</a>
-                    <a className="navbar__item" href="">About Us</a>
-                    <a className="navbar__item" href="">Blog</a>
-                </nav>
+const toolbar = props => (
+    <nav>
+        <Headroom>
+            <nav className="navbar_mobile__container">
+                <div className="toolbar__toggle-button">
+                    <DrawerToggleButton click={props.drawerClickHandler} />
+                </div>
             </nav>
+        </Headroom>
 
-        )
-    }
-}
+        <NavbarLang className=".navbar___languages"></NavbarLang>
+        <NavbarMain></NavbarMain>
+    </nav>
+);
 
-export default Navbar;
+export default toolbar;

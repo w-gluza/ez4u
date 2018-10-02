@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 
-
-import Toolbar from "./components/Navbar/Navbar";
 import SideDrawer from "./components/SideDrawer/SideDrawer";
 import Backdrop from "./components/Backdrop/Backdrop";
+// import Navbar from "./components/Navbar/NavbarMain";
 
 
 import Header from "./containers/Header";
+import Navbar from "./containers/Navbar";
+
 import Clients from "./components/Clients/Clients";
 import Feature from "./components/Clients/FeatureClients";
 import Footer from "./containers/Footer";
@@ -35,19 +36,19 @@ class App extends Component {
     }
     return (
       <div style={{ height: '100%' }}>
-        <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
+        {/* <Navbar /> */}
+        <Navbar drawerClickHandler={this.drawerToggleClickHandler} />
         <SideDrawer show={this.state.sideDrawerOpen} />
         {backdrop}
+
         <main style={{ marginTop: '0px' }}>
-          <Header>
-            <p>This is the page content!</p>
-          </Header>
+          <Header />
           <Clients data={this.props.data} clientsArray={this.props.clientsArray} />
           <Feature data={this.props.data} clientsArray={this.props.clientsArray} />
           <Footer />
         </main>
 
-      </div>
+      </div >
     );
   }
 }

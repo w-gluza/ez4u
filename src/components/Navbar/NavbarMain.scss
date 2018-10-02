@@ -1,0 +1,44 @@
+.navbar {
+  display: grid;
+  grid-template-columns: auto repeat(5, max-content);
+
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+
+  background-color: $color-white;
+  font-size: 2rem;
+  font-weight: 300;
+  grid-gap: 2.5rem;
+  align-items: center;
+}
+.navbar__item{
+  color: $color-primary-dark
+}
+
+
+.navbar__logo {
+  height: 5rem;
+}
+
+
+@media (max-width: 768px) {
+  .navbar_navigation-items {
+    display: none;
+  }
+
+  .navbar_mobile__container {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: #f5f5f5;
+  }
+  
+}
+
+@media (min-width: 769px) {
+  .toolbar__toggle-button {
+    display: none;
+  }
+}

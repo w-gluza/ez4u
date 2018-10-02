@@ -7,6 +7,7 @@ const drawerToggleButton = props => (
         <div className="toggle-button__line" />
         <div className="toggle-button__line" />
     </button>
+
 );
 
 export default drawerToggleButton;
