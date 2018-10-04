@@ -8,6 +8,7 @@ import Backdrop from "./components/Backdrop/Backdrop";
 import Header from "./containers/Header";
 import Navbar from "./containers/Navbar";
 
+import Contact from "./components/Contact/Contact";
 import Clients from "./components/Clients/Clients";
 import Feature from "./components/Clients/FeatureClients";
 import Footer from "./containers/Footer";
@@ -43,6 +44,7 @@ class App extends Component {
 
         <main style={{ marginTop: '0px' }}>
           <Header />
+          <Contact />
           <Clients data={this.props.data} clientsArray={this.props.clientsArray} />
           <Feature data={this.props.data} clientsArray={this.props.clientsArray} />
           <Footer />
