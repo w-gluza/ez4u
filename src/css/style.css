@@ -4,7 +4,8 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; }
+  box-sizing: inherit;
+  outline: none; }
 
 html {
   font-size: 62.5%;
@@ -17,6 +18,7 @@ body {
 
 .navbar,
 .navbar___languages,
+.contact,
 .clients,
 .footer__sections,
 .footer__footer__container {
@@ -166,6 +168,56 @@ p {
 
 .heading__primary--sub {
   display: block; }
+
+.contact {
+  background-color: #f5f5f5;
+  margin: 10rem; }
+
+form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); }
+
+legend {
+  color: #00acc1;
+  font-size: 6rem;
+  font-weight: 100; }
+
+label {
+  display: block;
+  color: #424242;
+  opacity: 0.7;
+  font-size: 3rem;
+  font-weight: 100;
+  padding-bottom: 5rem; }
+
+input,
+textarea {
+  font-family: "Roboto", sans-serif;
+  background-color: transparent;
+  font-size: 3rem;
+  color: #424242;
+  opacity: 0.7;
+  font-weight: 100;
+  border: none;
+  border-bottom: 0.2rem solid #bdbdbd; }
+
+input:focus,
+textarea:focus {
+  border-bottom: 0.2rem solid #00acc1; }
+
+.contact__error_message {
+  color: #ef5350;
+  font-size: 1.5rem; }
+
+.contact__fieldset--main {
+  border: none;
+  border-right: 3px solid #00acc1;
+  padding-bottom: 10rem; }
+
+.contact__fieldset--details {
+  border: none;
+  margin-left: 5rem;
+  margin-top: 8rem; }
 
 .clients {
   display: grid;
