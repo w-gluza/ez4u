@@ -98,22 +98,25 @@ class Contact extends Component {
 
                         <fieldset className="contact__fieldset--details">
                             {/* Work on those checkbox */}
-                            <label>Alfanumeric Numbers:
-                    <input
+                            <div className="checkbox">
+
+                                <input
                                     id='alfanumeric'
                                     type="checkbox"
                                     onChange={this.change}
                                 />
-                            </label>
+                                <label>Alfanumeric Numbers:</label>
 
-                            <label>International receivers:
-                    <input
+                            </div>
+                            <div className="checkbox">
+
+                                <input
                                     id='international'
                                     type="checkbox"
                                     onChange={this.change}
                                 />
-                            </label>
-
+                                <label>International receivers:</label>
+                            </div>
                             <label>
                                 <input
                                     id='subject'

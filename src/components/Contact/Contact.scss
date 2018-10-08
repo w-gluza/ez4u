@@ -33,12 +33,17 @@ textarea {
     font-weight: 100;
     border: none;
     border-bottom: 0.2rem solid $color-grey;
+
 }
 
 input:focus,
 textarea:focus
  {
     border-bottom: 0.2rem solid $color-primary;
+}
+
+textarea {
+    min-height: 15rem;
 }
 
 
@@ -57,4 +62,65 @@ textarea:focus
     border: none;
     margin-left: 5rem;
     margin-top: 8rem;
+}
+
+button {
+    cursor: pointer;
+    background: transparent;
+    border: 0.2rem solid $color-primary;
+    border-radius: 10rem;
+    transition: background-color 0.3s, color 0.3s, width 0.3s, border-width 0.3s, border-color 0.3s;
+
+    color: $color-primary;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    letter-spacing: 0.1rem;
+    
+    &:hover {
+        background-color: $color-primary;
+        color: $color-white;
+    }
+  }
+
+
+
+input[type="checkbox"] {
+    cursor:pointer;
+    border-bottom: none;
+    position: relative;
+    width: $checkbox-button-width;
+    height: $checkbox-button-height;
+    -webkit-appearance: none;
+    outline:none;
+    background: $color-secondary;
+    border-radius: $checkbox-border-radius;
+    box-shadow: inset 0 0 0.5rem $box-shadow;
+
+    transition: 0.5s;
+}
+
+input:checked[type="checkbox"] {
+
+    background: $color-primary;
+}
+
+input[type="checkbox"]:before {
+
+    content: '';
+    position: absolute;
+    width: $checkbox-button-height;
+    height: $checkbox-circle-width;
+    border-radius: $checkbox-border-radius;
+    top: 0;
+    left:0;
+    background:$color-white;
+    transform:scale(1.1);
+    box-shadow: 0 0.2rem 0.5rem $box-shadow;
+    transition: .5s;
+}
+
+input:checked[type="checkbox"]:before {
+    left:calc(#{$checkbox-button-width} - #{$checkbox-circle-width}
 }
