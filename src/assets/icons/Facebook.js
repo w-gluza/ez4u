@@ -3,15 +3,14 @@ import React from "react";
 const SVG = ({
   style = {},
   fill = "",
-  width = "",
-  height = "100%",
+  width = "100%",
   className = "",
   viewBox = "0 0 470.513 470.513"
 }) => (
     <svg
       width={width}
       style={style}
-      height={height}
+      height={width}
       viewBox={viewBox}
       xmlns="http://www.w3.org/2000/svg"
       className={`svg-icon ${className || ""}`}

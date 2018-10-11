@@ -1,4 +1,8 @@
 import React, { Component } from "react";
+import "../../css/style.css";
+import { translate } from 'react-i18next';
+
+
 
 
 const initialState = {
@@ -63,11 +67,11 @@ class Contact extends Component {
             <section className="contact">
                 <form className="form__grid" onSubmit={this.handleSubmit}>
                     <div className="contact__fieldset">
-                        <legend>Get a quote!</legend>
+                        <legend>{this.props.t('contact.legend')}</legend>
                         <label>
                             <input
                                 id='firstName'
-                                placeholder="First Name"
+                                placeholder={this.props.t('contact.firstName')}
                                 value={this.state.firstName}
                                 onChange={this.change}
                                 maxLength="20"
@@ -79,7 +83,7 @@ class Contact extends Component {
                         <label>
                             <input
                                 id='lastName'
-                                placeholder="Last Name"
+                                placeholder={this.props.t('contact.lastName')}
                                 value={this.state.lastName}
                                 onChange={this.change}
                                 maxLength="20"
@@ -100,22 +104,22 @@ class Contact extends Component {
                         <label>
                             <input
                                 id='phoneNumber'
-                                placeholder="Phone Number"
+                                placeholder={this.props.t('contact.phoneNumber')}
                                 value={this.state.phoneNumber}
                                 onChange={this.change}
                                 maxLength="20"
-                                inputmode="numeric"
+                                inputMode="numeric"
                                 type="number"
                             />
                         </label>
 
                         <div className="checkbox">
                             <input
-                                id='alfanumeric'
+                                id='alphanumeric'
                                 type="checkbox"
                                 onChange={this.change}
                             />
-                            <label>Alfanumeric Numbers:</label>
+                            <label>{this.props.t('contact.alphanumeric')}:</label>
 
                         </div>
                         <div className="checkbox">
@@ -125,13 +129,13 @@ class Contact extends Component {
                                 type="checkbox"
                                 onChange={this.change}
                             />
-                            <label>International receivers:</label>
+                            <label>{this.props.t('contact.international')}:</label>
                         </div>
 
                         <label>
                             <textarea
                                 id='message'
-                                placeholder="Let us know how we can help!"
+                                placeholder={this.props.t('contact.message')}
                                 value={this.state.message}
                                 onChange={this.change}
                                 maxLength="500"
@@ -142,7 +146,7 @@ class Contact extends Component {
                         </label>
 
                         {/* <button onClick={e => this.onSubmit(e)}>Submit</button> */}
-                        <button type='submit'>Submit</button>
+                        <button type='submit'>{this.props.t('contact.button')}</button>
 
                     </div>
                 </form>
@@ -151,4 +155,4 @@ class Contact extends Component {
     }
 }
 
-export default Contact;
+export default translate('common')(Contact);

@@ -20,6 +20,14 @@ p {
 .footer__list {
   font-size: 1.4rem;
   font-weight: 100;
-  line-height: 1.5;
+  line-height: 1.7;
   list-style: none;
+}
+
+.footer__list-item-subhead {
+ font-weight: 300;
+}
+
+.footer__list-item a {
+  color: $color-primary
 }

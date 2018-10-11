@@ -1,10 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./css/style.css";
-import App from "./App";
-import clientsArray from "./assets/json/clients.json"
+
 import { I18nextProvider } from 'react-i18next';
+
+import App from "./App";
 import i18next from 'i18next';
+
+import clientsArray from "./assets/json/clients.json";
+import "./css/style.css";
 
 import common_en from "./translations/en/common.json";
 import common_pt from "./translations/pt/common.json";

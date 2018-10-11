@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { translate, Trans } from 'react-i18next';
+import { translate } from 'react-i18next';
 
 import SideDrawer from "./components/SideDrawer/SideDrawer";
 import Backdrop from "./components/Backdrop/Backdrop";
@@ -31,7 +31,7 @@ class App extends Component {
 
   render() {
     let backdrop;
-    const { t, i18n } = this.props;
+    const { i18n } = this.props;
 
     if (this.state.sideDrawerOpen) {
       backdrop = <Backdrop click={this.backdropClickHandler} />

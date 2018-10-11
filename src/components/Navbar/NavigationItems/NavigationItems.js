@@ -2,12 +2,11 @@ import React, { Component } from "react";
 import "../../../css/style.css";
 import NavigationItem from "../NavigationItem/NavigationItem"
 
-import { translate, Trans } from 'react-i18next';
+import { translate } from 'react-i18next';
 
 
 class navigationItems extends Component {
     render() {
-        const { t, i18n } = this.props;
         return (
             <ul>
                 <img src="#" className="navbar__logo" alt="logo" />

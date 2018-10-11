@@ -19,42 +19,45 @@
         "mail": "yourmail@gmail.com",
         "mailError": "Este campo es obligatorio",
         "phoneNumber": "Número de teléfono",
-        "subject": "Sujeto",
+        "alphanumeric": "Alphanumeric NumbersES",
+        "international": "International receiversES",
         "message": "Háganos saber cómo podemos ayudar",
         "messageError": "Este campo es obligatorio",
         "button": "Enviar"
     },
     "footer": {
         "section1": {
-            "head": "Section Header 1",
-            "paragraph1": "Portfolio",
-            "paragraph2": "Contact",
-            "paragraph3": "About Us",
-            "paragraph4": "blog"
+            "head": "EZ4U",
+            "paragraph1": "Description goes here",
+            "paragraph2": "Lorem ipsum dolores",
+            "paragraph3": "em does",
+            "paragraph4": "singla de si"
         },
         "section2": {
-            "head": "Section Header 2",
-            "paragraph1": "Portfolio",
-            "paragraph2": "Contact",
-            "paragraph3": "About Us",
-            "paragraph4": "blog"
+            "head": "Products",
+            "paragraph1": "Geolocation",
+            "paragraph2": "API",
+            "paragraph3": "White Label",
+            "paragraph4": "Control and Stats"
         },
         "section3": {
-            "head": "Section Header 3",
-            "paragraph1": "Portfolio",
-            "paragraph2": "Contact",
-            "paragraph3": "About Us",
-            "paragraph4": "blog"
+            "head": "Blog",
+            "paragraph1": "New Partnership",
+            "paragraph2": "Case Studies",
+            "paragraph3": "New Feautre",
+            "paragraph4": "Tutorial"
         },
         "section4": {
-            "head": "Section Header 4",
-            "paragraph1": "Portfolio",
-            "paragraph2": "Contact",
-            "paragraph3": "About Us",
-            "paragraph4": "blog"
+            "head": "Contacto",
+            "paragraph1": "Inquérito Geral",
+            "paragraph2": "+351 220 731 391",
+            "paragraph3": "Contacto Comercial",
+            "paragraph4": "comercial@ez4uteam.com",
+            "paragraph5": "Helpdesk",
+            "paragraph6": "suporte@ez4uteam.com"
         }
     },
     "footerfooter": {
-        "credentials": "All rights reserved"
+        "credentials": "Todos los derechos reservados"
     }
 }
