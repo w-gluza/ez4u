@@ -1,8 +1,8 @@
 import React, { Component } from "react";
+import { translate, Trans } from 'react-i18next';
 
 import SideDrawer from "./components/SideDrawer/SideDrawer";
 import Backdrop from "./components/Backdrop/Backdrop";
-// import Navbar from "./components/Navbar/NavbarMain";
 
 
 import Header from "./containers/Header";
@@ -31,13 +31,20 @@ class App extends Component {
 
   render() {
     let backdrop;
+    const { t, i18n } = this.props;
 
     if (this.state.sideDrawerOpen) {
       backdrop = <Backdrop click={this.backdropClickHandler} />
     }
     return (
       <div style={{ height: '100%' }}>
-        {/* <Navbar /> */}
+        <nav className="navbar___languages">
+          <a className="navbar__languages__item" onClick={() => i18n.changeLanguage('en')}>en</a>
+          <a className="navbar__languages__item" onClick={() => i18n.changeLanguage('pt')}>pt</a>
+          <a className="navbar__languages__item" onClick={() => i18n.changeLanguage('es')}>es</a>
+        </nav>
+
+
         <Navbar drawerClickHandler={this.drawerToggleClickHandler} />
         <SideDrawer show={this.state.sideDrawerOpen} />
         {backdrop}
@@ -55,4 +62,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default translate('common')(App);

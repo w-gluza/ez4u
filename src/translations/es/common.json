@@ -1,0 +1,60 @@
+{
+    "nav": {
+        "home": "Home",
+        "portfolio": "Cartera",
+        "contact": "Contacto",
+        "about": "Sobre nosotros",
+        "blog": "Blog"
+    },
+    "header": {
+        "heading": "Your headign goes here",
+        "subheading": "your cool subheading goes hear",
+        "button": "button"
+    },
+    "contact": {
+        "legend": "Obtener una cotización!",
+        "firstName": "Nombre",
+        "firstNameError": "Este campo es obligatorio",
+        "lastName": "Apellido",
+        "mail": "yourmail@gmail.com",
+        "mailError": "Este campo es obligatorio",
+        "phoneNumber": "Número de teléfono",
+        "subject": "Sujeto",
+        "message": "Háganos saber cómo podemos ayudar",
+        "messageError": "Este campo es obligatorio",
+        "button": "Enviar"
+    },
+    "footer": {
+        "section1": {
+            "head": "Section Header 1",
+            "paragraph1": "Portfolio",
+            "paragraph2": "Contact",
+            "paragraph3": "About Us",
+            "paragraph4": "blog"
+        },
+        "section2": {
+            "head": "Section Header 2",
+            "paragraph1": "Portfolio",
+            "paragraph2": "Contact",
+            "paragraph3": "About Us",
+            "paragraph4": "blog"
+        },
+        "section3": {
+            "head": "Section Header 3",
+            "paragraph1": "Portfolio",
+            "paragraph2": "Contact",
+            "paragraph3": "About Us",
+            "paragraph4": "blog"
+        },
+        "section4": {
+            "head": "Section Header 4",
+            "paragraph1": "Portfolio",
+            "paragraph2": "Contact",
+            "paragraph3": "About Us",
+            "paragraph4": "blog"
+        }
+    },
+    "footerfooter": {
+        "credentials": "All rights reserved"
+    }
+}

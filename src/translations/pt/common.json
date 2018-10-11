@@ -1,0 +1,60 @@
+{
+    "nav": {
+        "home": "Home",
+        "portfolio": "Portfolio",
+        "contact": "Contato",
+        "about": "Sobre Nós",
+        "blog": "Blog"
+    },
+    "header": {
+        "heading": "Your headign goes here",
+        "subheading": "your cool subheading goes hear",
+        "button": "button"
+    },
+    "contact": {
+        "legend": "Obter uma cotação",
+        "firstName": "Primeiro Nome",
+        "firstNameError": "Este campo é obrigatório",
+        "lastName": "Sobrenome",
+        "mail": "yourmail@gmail.com",
+        "mailError": "Este campo é obrigatório",
+        "phoneNumber": "Número de telefone",
+        "subject": "Assunto",
+        "message": "Deixe-nos saber como podemos ajudar",
+        "messageError": "Este campo é obrigatório",
+        "button": "Enviar"
+    },
+    "footer": {
+        "section1": {
+            "head": "Section Header 1",
+            "paragraph1": "Portfolio",
+            "paragraph2": "Contact",
+            "paragraph3": "About Us",
+            "paragraph4": "blog"
+        },
+        "section2": {
+            "head": "Section Header 2",
+            "paragraph1": "Portfolio",
+            "paragraph2": "Contact",
+            "paragraph3": "About Us",
+            "paragraph4": "blog"
+        },
+        "section3": {
+            "head": "Section Header 3",
+            "paragraph1": "Portfolio",
+            "paragraph2": "Contact",
+            "paragraph3": "About Us",
+            "paragraph4": "blog"
+        },
+        "section4": {
+            "head": "Section Header 4",
+            "paragraph1": "Portfolio",
+            "paragraph2": "Contact",
+            "paragraph3": "About Us",
+            "paragraph4": "blog"
+        }
+    },
+    "footerfooter": {
+        "credentials": "All rights reserved"
+    }
+}

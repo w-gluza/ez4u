@@ -1,7 +1,7 @@
 import React from "react";
 import "../css/style.css";
 
-import NavbarLang from "../components/Navbar/NavbarLang";
+import NavbarLang from "../components/NavbarLang/NavbarLang";
 import NavbarMain from "../components/Navbar/NavbarMain";
 
 import Headroom from 'react-headroom';

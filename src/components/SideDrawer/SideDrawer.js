@@ -1,7 +1,7 @@
 import React from "react";
 import "../../css/style.css";
-import NavbarMain from "../Navbar/NavbarMain";
-import NavbarLang from "../Navbar/NavbarLang";
+import NavbarLang from "../NavbarLang/NavbarLang";
+import NavigationItems from "../Navbar/NavigationItems/NavigationItems";
 
 
 
@@ -13,10 +13,7 @@ const sideDrawer = props => {
     }
     return (
         <nav className={drawerClasses}>
-            <li>
-                <a href="/">Products</a>
-            </li>
-            <NavbarMain></NavbarMain>
+            <NavigationItems></NavigationItems>
             <NavbarLang></NavbarLang>
         </nav>
     );

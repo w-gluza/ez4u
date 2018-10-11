@@ -5,7 +5,7 @@ const initialState = {
     firstName: '',
     lastName: '',
     mail: '',
-    subject: '',
+    phoneNumber: '',
     message: '',
     firstNameError: '',
     mailError: '',
@@ -61,89 +61,91 @@ class Contact extends Component {
     render() {
         return (
             <section className="contact">
-                <div className="contact__container">
-                    <form onSubmit={this.handleSubmit}>
-                        <fieldset className="contact__fieldset--main">
-                            <legend>Get a quote!</legend>
-                            <label>
-                                <input
-                                    id='firstName'
-                                    placeholder="First Name"
-                                    value={this.state.firstName}
-                                    onChange={this.change}
-                                />
-                                <div className="contact__error_message">{this.state.firstNameError}</div>
+                <form className="form__grid" onSubmit={this.handleSubmit}>
+                    <div className="contact__fieldset">
+                        <legend>Get a quote!</legend>
+                        <label>
+                            <input
+                                id='firstName'
+                                placeholder="First Name"
+                                value={this.state.firstName}
+                                onChange={this.change}
+                                maxLength="20"
+                            />
+                            <div className="contact__error_message">{this.state.firstNameError}</div>
 
-                            </label>
+                        </label>
 
-                            <label>
-                                <input
-                                    id='lastName'
-                                    placeholder="Last Name"
-                                    value={this.state.lastName}
-                                    onChange={this.change}
-                                />
-                            </label>
+                        <label>
+                            <input
+                                id='lastName'
+                                placeholder="Last Name"
+                                value={this.state.lastName}
+                                onChange={this.change}
+                                maxLength="20"
+                            />
+                        </label>
 
-                            <label>
-                                <input
-                                    id='mail'
-                                    placeholder="yourmail@gmail.com"
-                                    value={this.state.mail}
-                                    onChange={this.change}
-                                />
-                                <div className="contact__error_message">{this.state.mailError}</div>
-                            </label>
-                        </fieldset>
+                        <label>
+                            <input
+                                id='mail'
+                                placeholder="yourmail@gmail.com"
+                                value={this.state.mail}
+                                onChange={this.change}
+                                maxLength="20"
+                            />
+                            <div className="contact__error_message">{this.state.mailError}</div>
+                        </label>
 
-                        <fieldset className="contact__fieldset--details">
-                            {/* Work on those checkbox */}
-                            <div className="checkbox">
+                        <label>
+                            <input
+                                id='phoneNumber'
+                                placeholder="Phone Number"
+                                value={this.state.phoneNumber}
+                                onChange={this.change}
+                                maxLength="20"
+                                inputmode="numeric"
+                                type="number"
+                            />
+                        </label>
 
-                                <input
-                                    id='alfanumeric'
-                                    type="checkbox"
-                                    onChange={this.change}
-                                />
-                                <label>Alfanumeric Numbers:</label>
+                        <div className="checkbox">
+                            <input
+                                id='alfanumeric'
+                                type="checkbox"
+                                onChange={this.change}
+                            />
+                            <label>Alfanumeric Numbers:</label>
 
+                        </div>
+                        <div className="checkbox">
+
+                            <input
+                                id='international'
+                                type="checkbox"
+                                onChange={this.change}
+                            />
+                            <label>International receivers:</label>
+                        </div>
+
+                        <label>
+                            <textarea
+                                id='message'
+                                placeholder="Let us know how we can help!"
+                                value={this.state.message}
+                                onChange={this.change}
+                                maxLength="500"
+                            />
+                            <div className="contact__error_message">
+                                {this.state.messageError}
                             </div>
-                            <div className="checkbox">
+                        </label>
 
-                                <input
-                                    id='international'
-                                    type="checkbox"
-                                    onChange={this.change}
-                                />
-                                <label>International receivers:</label>
-                            </div>
-                            <label>
-                                <input
-                                    id='subject'
-                                    placeholder="subject"
-                                    value={this.state.subject}
-                                    onChange={this.change}
-                                />
-                            </label>
+                        {/* <button onClick={e => this.onSubmit(e)}>Submit</button> */}
+                        <button type='submit'>Submit</button>
 
-                            <label>
-                                <textarea
-                                    id='message'
-                                    placeholder="Let us know how we can help!"
-                                    value={this.state.message}
-                                    onChange={this.change}
-
-                                />
-                                <div className="contact__error_message">
-                                    {this.state.messageError}
-                                </div>
-                            </label>
-
-                            {/* <button onClick={e => this.onSubmit(e)}>Submit</button> */}
-                            <button type='submit'>Submit</button>
-                        </fieldset>
-                    </form>
-                </div>
+                    </div>
+                </form>
             </section>
         );
     }
