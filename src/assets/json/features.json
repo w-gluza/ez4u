@@ -1,0 +1,82 @@
+{
+    "geolocation": {
+        "name": "Geolocation",
+        "image": "Portfolio",
+        "altIMG": "Geolocation Image",
+        "icon": "About Us",
+        "altICON": "Geolocation Icon",
+        "feature1": "Sed ut perspiciatis unde omnis",
+        "feature2": "At vero eos et accusamus et iusto ",
+        "feature3": "Nam libero tempore, cum soluta nobis est"
+    },
+    "statistics": {
+        "name": "Statistics",
+        "image": "Portfolio",
+        "altIMG": "Statistics Image",
+        "icon": "About Us",
+        "altICON": "Statistics Icon",
+        "feature1": "Sed ut perspiciatis unde omnis",
+        "feature2": "At vero eos et accusamus et iusto ",
+        "feature3": "Nam libero tempore, cum soluta nobis est"
+    },
+    "security": {
+        "name": "Security",
+        "image": "Portfolio",
+        "altIMG": "Geolocation",
+        "icon": "About Us",
+        "altICON": "Security Icon",
+        "feature1": "Sed ut perspiciatis unde omnis",
+        "feature2": "At vero eos et accusamus et iusto ",
+        "feature3": "Nam libero tempore, cum soluta nobis est"
+    },
+    "reliability": {
+        "name": "Reliability",
+        "image": "Portfolio",
+        "altIMG": "Reliability Image",
+        "icon": "About Us",
+        "altICON": "Reliability Icon",
+        "feature1": "Sed ut perspiciatis unde omnis",
+        "feature2": "At vero eos et accusamus et iusto ",
+        "feature3": "Nam libero tempore, cum soluta nobis est"
+    },
+    "white": {
+        "name": "White Label",
+        "image": "Portfolio",
+        "altIMG": "White Label Image",
+        "icon": "About Us",
+        "altICON": "White Label Icon",
+        "feature1": "Sed ut perspiciatis unde omnis",
+        "feature2": "At vero eos et accusamus et iusto ",
+        "feature3": "Nam libero tempore, cum soluta nobis est"
+    },
+    "tech": {
+        "name": "Tech Integration",
+        "image": "Portfolio",
+        "altIMG": "Tech Integration Image",
+        "icon": "About Us",
+        "altICON": "Tech Integration Icon",
+        "feature1": "Sed ut perspiciatis unde omnis",
+        "feature2": "At vero eos et accusamus et iusto ",
+        "feature3": "Nam libero tempore, cum soluta nobis est"
+    },
+    "api": {
+        "name": "API",
+        "image": "Portfolio",
+        "altIMG": "API Image",
+        "icon": "About Us",
+        "altICON": "API Icon",
+        "feature1": "Sed ut perspiciatis unde omnis",
+        "feature2": "At vero eos et accusamus et iusto ",
+        "feature3": "Nam libero tempore, cum soluta nobis est"
+    },
+    "inbox": {
+        "name": "Inbox",
+        "image": "Portfolio",
+        "altIMG": "Inbox Image",
+        "icon": "About Us",
+        "altICON": "Inbox Icon",
+        "feature1": "Sed ut perspiciatis unde omnis",
+        "feature2": "At vero eos et accusamus et iusto ",
+        "feature3": "Nam libero tempore, cum soluta nobis est"
+    }
+}

@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import { translate } from 'react-i18next';
+import { BrowserRouter, Route } from "react-router-dom";
+
+
 
 import SideDrawer from "./components/SideDrawer/SideDrawer";
 import Backdrop from "./components/Backdrop/Backdrop";
@@ -7,6 +10,9 @@ import Backdrop from "./components/Backdrop/Backdrop";
 
 import Header from "./containers/Header";
 import Navbar from "./containers/Navbar";
+
+import FeaturesItems from "./components/Features/FeaturesItems";
+
 
 import Contact from "./components/Contact/Contact";
 import Clients from "./components/Clients/Clients";
@@ -37,27 +43,33 @@ class App extends Component {
       backdrop = <Backdrop click={this.backdropClickHandler} />
     }
     return (
-      <div style={{ height: '100%' }}>
-        <nav className="navbar___languages">
-          <a className="navbar__languages__item" onClick={() => i18n.changeLanguage('en')}>en</a>
-          <a className="navbar__languages__item" onClick={() => i18n.changeLanguage('pt')}>pt</a>
-          <a className="navbar__languages__item" onClick={() => i18n.changeLanguage('es')}>es</a>
-        </nav>
+      <BrowserRouter>
+        <div style={{ height: '100%' }}>
+          <nav className="navbar___languages">
+            <a className="navbar__languages__item" onClick={() => i18n.changeLanguage('en')}>en</a>
+            <a className="navbar__languages__item" onClick={() => i18n.changeLanguage('pt')}>pt</a>
+            <a className="navbar__languages__item" onClick={() => i18n.changeLanguage('es')}>es</a>
+          </nav>
 
 
-        <Navbar drawerClickHandler={this.drawerToggleClickHandler} />
-        <SideDrawer show={this.state.sideDrawerOpen} />
-        {backdrop}
+          <Navbar drawerClickHandler={this.drawerToggleClickHandler} />
+          <SideDrawer show={this.state.sideDrawerOpen} />
+          {backdrop}
 
-        <main style={{ marginTop: '0px' }}>
-          <Header />
-          <Contact />
-          <Clients data={this.props.data} clientsArray={this.props.clientsArray} />
-          <Feature data={this.props.data} clientsArray={this.props.clientsArray} />
-          <Footer />
-        </main>
+          <main style={{ marginTop: '0px' }}>
+            <Header />
+            <Route exact path='/' component={FeaturesItems} />
+            <Contact></Contact>
+            <Route path='/contact' component={Contact} />
 
-      </div >
+            <Route path='/portfolio' render={(props) => <Clients {...props} data={this.props.data} clientsArray={this.props.clientsArray} />} />
+
+            <Feature data={this.props.data} clientsArray={this.props.clientsArray} />
+            <Footer />
+          </main>
+
+        </div >
+      </BrowserRouter >
     );
   }
 }

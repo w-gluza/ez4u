@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "../../../css/style.css";
-import NavigationItem from "../NavigationItem/NavigationItem"
+
+import { NavLink } from "react-router-dom";
+import Icon from "../../../assets/icons/";
 
 import { translate } from 'react-i18next';
 
@@ -8,17 +10,33 @@ import { translate } from 'react-i18next';
 class navigationItems extends Component {
     render() {
         return (
-            <ul>
-                <img src="#" className="navbar__logo" alt="logo" />
+            <nav className="navbar">
 
-                <NavigationItem link="/">{this.props.t('nav.home')}</NavigationItem>
-                <NavigationItem link="/">{this.props.t('nav.portfolio')}</NavigationItem>
-                <NavigationItem link="/">{this.props.t('nav.contact')}</NavigationItem>
-                <NavigationItem link="/">{this.props.t('nav.about')}</NavigationItem>
-                <NavigationItem link="/">{this.props.t('nav.blog')}</NavigationItem>
+                <li  className="navigation__item">
+                    <NavLink exact to='/'><Icon name="logo" className="navbar__logo " alt="EZ4U logo" /> </NavLink>
+                </li>
 
+                <li className="navigation__item">
+                    <NavLink exact to='/'>{this.props.t('nav.home')} </NavLink>
+                </li>
 
-            </ul>
+                <li className="navigation__item">
+                    <NavLink to='/portfolio'>{this.props.t('nav.portfolio')}</NavLink>
+                </li>
+
+                <li className="navigation__item">
+                    <NavLink to='/contact'>{this.props.t('nav.contact')}</NavLink>
+                </li>
+
+                <li className="navigation__item">
+                    <NavLink to='/about'>{this.props.t('nav.about')}</NavLink>
+                </li>
+
+                <li className="navigation__item">
+                    <NavLink to='/blog'>{this.props.t('nav.blog')}</NavLink>
+                </li>
+
+            </nav >
         );
     }
 }

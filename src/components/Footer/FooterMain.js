@@ -72,7 +72,6 @@ class Footer extends Component {
                                 name="linkedin"
                                 className="icon__social"
                                 alt="LinkedIn logo"
-                                href="https://www.linkedin.com/company/ez4u/"
                             />
                         </a>
                     </div>

@@ -9,7 +9,7 @@ import NavigationItems from "./NavigationItems/NavigationItems"
 class navbarMain extends Component {
     render() {
         return (
-            <nav className="navbar">
+            <nav>
                 <NavigationItems></NavigationItems>
             </nav>
         );

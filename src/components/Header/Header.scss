@@ -1,36 +1,63 @@
 header{
+    background-color: $color-primary;
+    position: relative;
+    height: 95vh;
+
 }
 
 .header__img {
-    height: 95vh;
+    height: 100vh;
+
     background-image: linear-gradient(
-    to right bottom,
-    rgba(193, 222, 244, 0.3),
-    rgba(0, 124, 145, 0.3)),url(https://images.unsplash.com/photo-1519944518895-f08a12d6dfd5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=409a6a69f371e4886d01b4d9fce6fc9a&auto=format&fit=crop&w=1050&q=80);
+        to left top,
+        rgba(0, 124, 145, 0.7),
+        rgba(38,50,56, 0.8)),url(./header_photo.jpg);
+    
     background-size: cover;
-    background-position: top;
+    background-position: left;
 
     // clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
     // clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 16% 89%, 0 100%);
-    clip-path: polygon(100% 0, 100% 100%, 50% 100%, 15% 0);
+    clip-path: polygon(100% 0, 100% 100%, 0% 100%, 0% 0);
 
 }
-.test2 {
-    background-color: blue;
+
+.header__text{
     position: absolute;
-    z-index: 10;
+    top:20vh;
+    left:5vw;
+    letter-spacing: 1.2rem;
+    font-size: 3rem;
 }
 
 .heading__primary {
-    // color: $color-white;
-    color: $color-black;
-
-    text-transform: uppercase;
+    color: $color-white;
+    font-size: 5rem;
+    font-weight: 700;
 }
+
+.red {
+    color: $color-secondary
+
+}
+
 
 .heading__primary--main {
     display: block;
 }
-.heading__primary--sub {
-    display: block;
+
+.button__header {
+    color: #f3f3f3;
+    font-weight: 400;
+    background-color:$color-secondary;
+    border: 0.2rem solid $color-secondary;
+
+    
+    &:hover {
+        background-color: #b61827;
+        border: 0.2rem solid #b61827;
+
+        // color: $color-primary;
+    }
 }
+

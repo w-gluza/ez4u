@@ -146,7 +146,7 @@ class Contact extends Component {
                         </label>
 
                         {/* <button onClick={e => this.onSubmit(e)}>Submit</button> */}
-                        <button type='submit'>{this.props.t('contact.button')}</button>
+                        <button className="button__contact" type='submit'>{this.props.t('contact.button')}</button>
 
                     </div>
                 </form>

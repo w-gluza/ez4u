@@ -12,15 +12,15 @@
         "button": "button"
     },
     "contact": {
-        "legend": "Obtener una cotización!",
-        "firstName": "Nombre",
+        "legend": "Obtener presupuesto!",
+        "firstName": "Primer nombre",
         "firstNameError": "Este campo es obligatorio",
-        "lastName": "Apellido",
-        "mail": "yourmail@gmail.com",
+        "lastName": "Ultimo nombre",
+        "mail": "tuemail@gmail.com",
         "mailError": "Este campo es obligatorio",
         "phoneNumber": "Número de teléfono",
-        "alphanumeric": "Alphanumeric NumbersES",
-        "international": "International receiversES",
+        "alphanumeric": "Números alfanuméricos",
+        "international": "Receptores Internacionales",
         "message": "Háganos saber cómo podemos ayudar",
         "messageError": "Este campo es obligatorio",
         "button": "Enviar"

@@ -16,7 +16,7 @@ import common_es from "./translations/es/common.json";
 
 i18next.init({
     interpolation: { escapeValue: false },  // React already does escaping
-    lng: 'pt',                              // default language
+    lng: 'en',                              // default language
     resources: {
         en: {
             common: common_en               // 'common' is our custom namespace
