@@ -3,6 +3,9 @@ import "../../css/style.css";
 import FeaturesItem from "./FeaturesItem"
 import Icon from "../../assets/icons/";
 
+import Toggle from "../Toggle/ToggleRPC"
+
+
 
 import { translate } from 'react-i18next';
 
@@ -18,17 +21,34 @@ class FeaturesItems extends Component {
                     </div>
 
                     <div className="features__details__grid">
-                        <div className="features__details">
-                            <p className="features__details__heading"> <span className="featuresSpan">#</span> Geolocation</p>
-                            <p className="features__details__paragraph"> <span className="featuresSpan">_</span> Leverage agile frameworks</p>
-                            <p className="features__details__paragraph"> <span className="featuresSpan">_</span> Organically grow the holistic world</p>
-                            <p className="features__details__paragraph"> <span className="featuresSpan">_</span> Capitalize on low hanging fruit</p>
-                            <p className="features__details__paragraph"> <span className="featuresSpan">_</span> Further the overall value proposition</p>
-                            <p className="features__details__paragraph"> <span className="featuresSpan">_</span> Capitalize on low hanging fruit</p>
+                        <Toggle>
+                            {({ on, toggle }) => (
+                                <div>
+                                    {on &&
 
-                        </div>
+                                        <div className="features__details">
+
+                                            <p className="features__details__heading"> <span className="featuresSpan">#</span> {this.props.t('sms.name')}</p>
+                                            <p className="features__details__paragraph"> <span className="featuresSpan">_</span> {this.props.t('sms.feature1')}</p>
+                                            <p className="features__details__paragraph"> <span className="featuresSpan">_</span> {this.props.t('sms.feature2')}</p>
+                                            <p className="features__details__paragraph"> <span className="featuresSpan">_</span> {this.props.t('sms.feature3')}</p>
+                                            <p className="features__details__paragraph"> <span className="featuresSpan">_</span> {this.props.t('sms.feature4')}</p>
+                                            <p className="features__details__paragraph"> <span className="featuresSpan">_</span> {this.props.t('sms.feature5')}</p>
+                                        </div>
+                                    }
+                                    <Icon
+                                        name="sms"
+                                        className="icon__features"
+                                        alt="SMS Icon"
+                                        onClick={toggle}
+                                    />
+                                </div>
+                            )}
+                        </Toggle>
+
+
                         <div className="features__icons__grid ">
-                            <div class="feature__item">
+                            <div className="feature__item">
                                 <div className="feature__name">
                                     <FeaturesItem link="/">{this.props.t('sms.name')}
                                     </FeaturesItem>
@@ -41,7 +61,7 @@ class FeaturesItems extends Component {
 
                             </div>
 
-                            <div class="feature__item">
+                            <div className="feature__item">
                                 <div className="feature__name">
                                     <FeaturesItem link="/">{this.props.t('pricing.name')}</FeaturesItem>
                                 </div>
@@ -51,7 +71,7 @@ class FeaturesItems extends Component {
                                     alt="Geolocation Icon"
                                 />
                             </div>
-                            <div class="feature__item">
+                            <div className="feature__item">
                                 <div className="feature__name">
                                     <FeaturesItem link="/">{this.props.t('inbox.name')}</FeaturesItem>
                                 </div>
@@ -61,7 +81,7 @@ class FeaturesItems extends Component {
                                     alt="Geolocation Icon"
                                 />
                             </div>
-                            <div class="feature__item">
+                            <div className="feature__item">
                                 <div className="feature__name">
                                     <FeaturesItem link="/">{this.props.t('api.name')}</FeaturesItem>
                                 </div>
@@ -72,7 +92,7 @@ class FeaturesItems extends Component {
                                 />
                             </div>
 
-                            <div class="feature__item">
+                            <div className="feature__item">
                                 <div className="feature__name">
                                     <FeaturesItem link="/">{this.props.t('ivr.name')}</FeaturesItem>
                                 </div>
@@ -83,7 +103,7 @@ class FeaturesItems extends Component {
                                 />
                             </div>
 
-                            <div class="feature__item">
+                            <div className="feature__item">
                                 <div className="feature__name">
                                     <FeaturesItem link="/">{this.props.t('security.name')}</FeaturesItem>
                                 </div>
@@ -93,7 +113,7 @@ class FeaturesItems extends Component {
                                     alt="Geolocation Icon"
                                 />
                             </div>
-                            <div class="feature__item">
+                            <div className="feature__item">
                                 <div className="feature__name">
                                     <FeaturesItem link="/">{this.props.t('geolocation.name')}
                                     </FeaturesItem>
@@ -106,7 +126,7 @@ class FeaturesItems extends Component {
 
                             </div>
 
-                                <div class="feature__item">
+                            <div className="feature__item">
                                 <div className="feature__name">
                                     <FeaturesItem link="/">{this.props.t('white.name')}</FeaturesItem>
                                 </div>
@@ -117,7 +137,7 @@ class FeaturesItems extends Component {
                                 />
                             </div>
 
-                               <div class="feature__item">
+                            <div className="feature__item">
                                 <div className="feature__name">
                                     <FeaturesItem link="/">{this.props.t('url.name')}</FeaturesItem>
                                 </div>
@@ -127,10 +147,7 @@ class FeaturesItems extends Component {
                                     alt="Geolocation Icon"
                                 />
                             </div>
-
                         </div>
-
-
                     </div>
                 </section>
             </section>

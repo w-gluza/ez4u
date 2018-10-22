@@ -5,7 +5,8 @@ const SVG = ({
     fill = "",
     width = "100%",
     className = "",
-    viewBox = "0 0 48.748 48.748"
+    viewBox = "0 0 48.748 48.748",
+    onClick
 }) => (
         <svg
             width={width}
@@ -14,6 +15,7 @@ const SVG = ({
             viewBox={viewBox}
             xmlns="http://www.w3.org/2000/svg"
             className={`svg-icon ${className || ""}`}
+            onClick={onClick}
             xmlnsXlink="http://www.w3.org/1999/xlink"
         >
             <path
