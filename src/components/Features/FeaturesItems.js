@@ -10,10 +10,6 @@ import { translate } from "react-i18next";
 class FeaturesItems extends Component {
   render() {
     return (
-        <Toggle>
-        {({ on, toggle }) => (
-          <div>
-            {on && (
       <section className="features__section">
         <section className="features__section__grid">
           <div className="features__text__container">
@@ -34,6 +30,10 @@ class FeaturesItems extends Component {
             </div>
           </div>
           <div className="features__details__grid">
+            <Toggle>
+              {({ on, toggle }) => (
+                <div>
+                  {on && (
                     <div className="features__details">
                       <p className="features__details__heading">
                         {" "}
@@ -73,6 +73,9 @@ class FeaturesItems extends Component {
                     alt="SMS Icon"
                     onClick={toggle}
                   />
+                </div>
+              )}
+            </Toggle>
             <div className="features__icons__grid ">
               <div className="feature__item">
                 <div className="feature__name">
@@ -183,10 +186,6 @@ class FeaturesItems extends Component {
           </div>
         </section>
       </section>
-      </div>
-      )}
-    </Toggle>
-    </div>
     );
   }
 }
