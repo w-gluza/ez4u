@@ -4,8 +4,7 @@ export default class Test extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      something: "something",
-      isHidden: true,
+      visibleFeature: "0",
       features: [
         {
           name: "sms.features",
@@ -26,40 +25,47 @@ export default class Test extends Component {
       buttons: [
         {
           name: "sms",
-          key: 1
+          key: "1"
         },
         {
           name: "pricing",
-          key: 2
+          key: "2"
         },
         {
           name: "api",
-          key: 3
+          key: "3"
         }
       ]
     };
     this.toggleHidden = this.toggleHidden.bind(this);
   }
 
-  toggleHidden() {
-    this.setState({
-      isHidden: !this.state.isHidden
+  toggleHidden(key) {
+    this.setState(state => {
+      if (state.visibleFeature === key) return { visibleFeature: 0 };
+
+      return { visibleFeature: key };
     });
   }
 
   render() {
+    const feature = this.state.visibleFeature;
     return (
       <div style={{ marginLeft: "20%" }}>
         <div className="features__details__grid">
-          {!this.state.isHidden &&
-            this.state.features.map((object, key) => (
-              <div key={key}>{object.name}</div>
-            ))}
+          {this.state.features.map(
+            object =>
+              feature === object.key && (
+                <div key={object.key}>{object.name}</div>
+              )
+          )}
         </div>
         <div className="buttons">
-          {this.state.buttons.map((button, key) => (
-            <div key={key}>
-              <button onClick={this.toggleHidden}>{button.name}</button>
+          {this.state.buttons.map(button => (
+            <div key={button.key}>
+              <button onClick={() => this.toggleHidden(button.key)}>
+                {button.name}
+              </button>
             </div>
           ))}
         </div>
