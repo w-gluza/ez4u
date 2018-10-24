@@ -3,8 +3,6 @@ import "../../css/style.css";
 import FeaturesItem from "./FeaturesItem";
 import Icon from "../../assets/icons/";
 
-import Toggle from "../Toggle/ToggleRPC";
-
 import { translate } from "react-i18next";
 
 class FeaturesItems extends Component {
@@ -30,52 +28,38 @@ class FeaturesItems extends Component {
             </div>
           </div>
           <div className="features__details__grid">
-            <Toggle>
-              {({ on, toggle }) => (
-                <div>
-                  {on && (
-                    <div className="features__details">
-                      <p className="features__details__heading">
-                        {" "}
-                        <span className="featuresSpan">#</span>{" "}
-                        {this.props.t("sms.name")}
-                      </p>
-                      <p className="features__details__paragraph">
-                        {" "}
-                        <span className="featuresSpan">_</span>{" "}
-                        {this.props.t("sms.feature1")}
-                      </p>
-                      <p className="features__details__paragraph">
-                        {" "}
-                        <span className="featuresSpan">_</span>{" "}
-                        {this.props.t("sms.feature2")}
-                      </p>
-                      <p className="features__details__paragraph">
-                        {" "}
-                        <span className="featuresSpan">_</span>{" "}
-                        {this.props.t("sms.feature3")}
-                      </p>
-                      <p className="features__details__paragraph">
-                        {" "}
-                        <span className="featuresSpan">_</span>{" "}
-                        {this.props.t("sms.feature4")}
-                      </p>
-                      <p className="features__details__paragraph">
-                        {" "}
-                        <span className="featuresSpan">_</span>{" "}
-                        {this.props.t("sms.feature5")}
-                      </p>
-                    </div>
-                  )}
-                  <Icon
-                    name="sms"
-                    className="icon__features"
-                    alt="SMS Icon"
-                    onClick={toggle}
-                  />
-                </div>
-              )}
-            </Toggle>
+            <div className="features__details">
+              <p className="features__details__heading">
+                {" "}
+                <span className="featuresSpan">#</span>{" "}
+                {this.props.t("sms.name")}
+              </p>
+              <p className="features__details__paragraph">
+                {" "}
+                <span className="featuresSpan">_</span>{" "}
+                {this.props.t("sms.feature1")}
+              </p>
+              <p className="features__details__paragraph">
+                {" "}
+                <span className="featuresSpan">_</span>{" "}
+                {this.props.t("sms.feature2")}
+              </p>
+              <p className="features__details__paragraph">
+                {" "}
+                <span className="featuresSpan">_</span>{" "}
+                {this.props.t("sms.feature3")}
+              </p>
+              <p className="features__details__paragraph">
+                {" "}
+                <span className="featuresSpan">_</span>{" "}
+                {this.props.t("sms.feature4")}
+              </p>
+              <p className="features__details__paragraph">
+                {" "}
+                <span className="featuresSpan">_</span>{" "}
+                {this.props.t("sms.feature5")}
+              </p>
+            </div>
             <div className="features__icons__grid ">
               <div className="feature__item">
                 <div className="feature__name">

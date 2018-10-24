@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import Icon from "../../assets/icons/";
+import { translate } from "react-i18next";
 
 export default class Test extends Component {
   constructor(props) {
@@ -7,65 +9,68 @@ export default class Test extends Component {
       visibleFeature: "0",
       features: [
         {
-          name: "sms.features",
-          key: "1",
-          icon: "sms icon"
+          // feature: this.props.t("sms.feature5"),
+          feature: "sms.feature5",
+          id: "1"
         },
         {
-          name: "pricing.features",
-          key: "2",
-          icon: "pricing icon"
+          feature: "pricing features",
+          id: "2"
         },
         {
-          name: "api.features",
-          key: "3",
-          icon: "api icon"
+          feature: "api features",
+          id: "3"
         }
       ],
       buttons: [
         {
           name: "sms",
-          key: "1"
+          id: "1",
+          iconName: "sms"
         },
         {
           name: "pricing",
-          key: "2"
+          id: "2",
+          iconName: "ivr"
         },
         {
           name: "api",
-          key: "3"
+          id: "3",
+          iconName: "url"
         }
       ]
     };
     this.toggleHidden = this.toggleHidden.bind(this);
   }
-
-  toggleHidden(key) {
+  toggleHidden(id) {
     this.setState(state => {
-      if (state.visibleFeature === key) return { visibleFeature: 0 };
-
-      return { visibleFeature: key };
+      if (state.visibleFeature === id) return { visibleFeature: 0 };
+      return { visibleFeature: id };
     });
   }
-
   render() {
     const feature = this.state.visibleFeature;
     return (
-      <div style={{ marginLeft: "20%" }}>
+      <div>
         <div className="features__details__grid">
           {this.state.features.map(
-            object =>
-              feature === object.key && (
-                <div key={object.key}>{object.name}</div>
+            features =>
+              feature === features.id && (
+                <div id={features.id}>{features.feature}</div>
               )
           )}
         </div>
         <div className="buttons">
           {this.state.buttons.map(button => (
-            <div key={button.key}>
-              <button onClick={() => this.toggleHidden(button.key)}>
+            <div key={button.id}>
+              <span onClick={() => this.toggleHidden(button.id)}>
                 {button.name}
-              </button>
+                <Icon
+                  name={button.iconName}
+                  className="icon__features"
+                  alt="Geolocation Icon"
+                />
+              </span>
             </div>
           ))}
         </div>
