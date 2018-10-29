@@ -10,8 +10,6 @@ import Navbar from "./containers/Navbar";
 
 import FeaturesItems from "./components/Features/FeaturesItems";
 
-import Test from "./components/test/Test";
-
 import Contact from "./components/Contact/Contact";
 import Clients from "./components/Clients/Clients";
 import Feature from "./components/Clients/FeatureClients";
@@ -70,10 +68,8 @@ class App extends Component {
           <main style={{ marginTop: "0px" }}>
             <Header />
             <Route exact path="/" component={FeaturesItems} />
-            <Contact />
-            <Test />
-
-            <Route path="/contact" component={Contact} />
+            <Route exact path="/" component={Contact} />
+            <Route exact path="/contact" component={Contact} />
 
             <Route
               path="/portfolio"

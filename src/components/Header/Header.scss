@@ -1,63 +1,63 @@
-header{
-    background-color: $color-primary;
-    position: relative;
-    height: 95vh;
-
+.header {
+  display: grid;
+  height: 95vh;
+  grid-template-rows: repeat(12, 1fr);
 }
 
 .header__img {
-    height: 100vh;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
 
-    background-image: linear-gradient(
-        to left top,
-        rgba(0, 124, 145, 0.7),
-        rgba(38,50,56, 0.8)),url(./header_photo.jpg);
-    
-    background-size: cover;
-    background-position: left;
+  background-image: linear-gradient(
+      to left top,
+      rgba(0, 124, 145, 0.7),
+      rgba(38, 50, 56, 0.8)
+    ),
+    url(./header_photo.jpg);
 
-    // clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
-    // clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 16% 89%, 0 100%);
-    clip-path: polygon(100% 0, 100% 100%, 0% 100%, 0% 0);
-
+  background-position: center;
+  //   clip-path: polygon(100% 0, 100% 100%, 0% 100%, 0% 0);
 }
 
-.header__text{
-    position: absolute;
-    top:20vh;
-    left:5vw;
-    letter-spacing: 1.2rem;
-    font-size: 3rem;
+.header__text {
+  grid-column: 2/-1;
+  grid-row-start: 5;
+
+  padding-left: 5vw;
+  letter-spacing: 1.2rem;
+  font-size: 3rem;
 }
 
 .heading__primary {
-    color: $color-white;
-    font-size: 5rem;
-    font-weight: 700;
+  color: $color-white;
+  font-size: 5rem;
+  font-weight: 700;
 }
 
 .red {
-    color: $color-secondary
-
+  color: $color-secondary;
 }
 
-
 .heading__primary--main {
-    display: block;
+  display: block;
 }
 
 .button__header {
-    color: #f3f3f3;
-    font-weight: 400;
-    background-color:$color-secondary;
-    border: 0.2rem solid $color-secondary;
+  color: #f3f3f3;
+  font-weight: 400;
+  background-color: $color-secondary;
+  border: 0.2rem solid $color-secondary;
 
-    
-    &:hover {
-        background-color: #b61827;
-        border: 0.2rem solid #b61827;
-
-        // color: $color-primary;
-    }
+  &:hover {
+    background-color: #b61827;
+    border: 0.2rem solid #b61827;
+  }
 }
 
+@media (max-width: 769px) {
+  .header__text {
+    grid-row-start: 8;
+    letter-spacing: 0.5rem;
+    font-size: 1rem;
+  }
+}

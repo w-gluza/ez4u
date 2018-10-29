@@ -1,135 +1,135 @@
 {
-    "nav": {
-        "home": "Home",
-        "portfolio": "Portfolio",
-        "contact": "Contact",
-        "about": "About Us",
-        "blog": "Blog"
+  "nav": {
+    "home": "Home",
+    "portfolio": "Portfolio",
+    "contact": "Contact",
+    "about": "About Us",
+    "blog": "Blog"
+  },
+  "header": {
+    "heading": "Your headign goes here",
+    "subheading": "your cool subheading goes hear",
+    "button": "button"
+  },
+  "sms": {
+    "name": "SMS",
+    "feature1": "Massive Marketing Campaigns",
+    "feature2": "Transactional SMS in Real Time Systems",
+    "feature3": "Global Worldwide Coverage",
+    "feature4": "Alphanumeric SenderIDs",
+    "feature5": "High Availability and Low Latency"
+  },
+  "pricing": {
+    "name": "Pricing",
+    "feature1": "No Setup Fees",
+    "feature2": "No Monthly Fees",
+    "feature3": "No Contracts",
+    "feature4": "No Activation Costs",
+    "feature5": "Various Payment Methods"
+  },
+  "inbox": {
+    "name": "Inbound Channels",
+    "feature1": "Inbound SMS",
+    "feature2": "Automatic Processing",
+    "feature3": "External Systems Integration",
+    "feature4": "Real-Time Push Services",
+    "feature5": "Global Coverage"
+  },
+  "api": {
+    "name": "API",
+    "feature1": "RESTFull HTTP(S) / JSON / XML",
+    "feature2": "Online Code Samples",
+    "feature3": "Easy Integration",
+    "feature4": "Low Development Effort",
+    "feature5": "SMPP v3.4 (as alternative to API HTTPS)"
+  },
+  "ivr": {
+    "name": "IVR",
+    "feature1": "Voice Messages",
+    "feature2": "CPre-Recorded Audio (MP3)",
+    "feature3": "Text-to-Speech (TTS)",
+    "feature4": "Response Collection (DTMF)",
+    "feature5": "Automatic Processing"
+  },
+  "security": {
+    "name": "Security",
+    "feature1": "Channel Redundancy",
+    "feature2": "GDPR Compliant",
+    "feature3": "High Availability",
+    "feature4": "High Processing Power",
+    "feature5": "Extreme SLAs"
+  },
+  "geolocation": {
+    "name": "GeoLocation",
+    "feature1": "Foot Traffic Redirect",
+    "feature2": "Real-Time Campaigns",
+    "feature3": "Immediate Results",
+    "feature4": "Geographic Segments",
+    "feature5": "Demographic Segments"
+  },
+  "whitelabel": {
+    "name": "White Label",
+    "feature1": "Reseller Platform",
+    "feature2": "Look&Feel Customization",
+    "feature3": "SubAccounts Strutcture",
+    "feature4": "Vanity Domain",
+    "feature5": "Possible Reuse of Payment Gateways"
+  },
+  "url": {
+    "name": "URL Shortener",
+    "feature1": "Vanity Domain",
+    "feature2": "Unlimited Link Generation",
+    "feature3": "WebTraffic Redirection",
+    "feature4": "Detailed Statistics",
+    "feature5": "Character Savings"
+  },
+  "contact": {
+    "legend": "Get a quote",
+    "firstName": "First Name",
+    "firstNameError": "This field is mandatory",
+    "lastName": "Last Name",
+    "mail": "yourmail@gmail.com",
+    "mailError": "This field is mandatory",
+    "phoneNumber": "Phone number",
+    "alphanumeric": "Alphanumeric Numbers",
+    "international": "International receivers",
+    "message": "Let us know how we can help",
+    "messageError": "This field is mandatory",
+    "button": "Submit"
+  },
+  "footer": {
+    "section1": {
+      "head": "EZ4U",
+      "paragraph1": "Description goes here",
+      "paragraph2": "Lorem ipsum dolores",
+      "paragraph3": "em does",
+      "paragraph4": "singla de si"
     },
-    "header": {
-        "heading": "Your headign goes here",
-        "subheading": "your cool subheading goes hear",
-        "button": "button"
+    "section2": {
+      "head": "Products",
+      "paragraph1": "Geolocation",
+      "paragraph2": "API",
+      "paragraph3": "White Label",
+      "paragraph4": "Control and Stats"
     },
-    "sms": {
-        "name": "SMS",
-        "feature1": "Massive Marketing Campaigns",
-        "feature2": "Transactional SMS in Real Time Systems",
-        "feature3": "Global Worldwide Coverage",
-        "feature4": "Alphanumeric SenderIDs",
-        "feature5": "High Availability and Low Latency"
+    "section3": {
+      "head": "Blog",
+      "paragraph1": "New Partnership",
+      "paragraph2": "Case Studies",
+      "paragraph3": "New Feautre",
+      "paragraph4": "Tutorial"
     },
-    "pricing": {
-        "name": "Pricing",
-        "feature1": "No Setup Fees",
-        "feature2": "No Monthly Fees",
-        "feature3": "No Contracts",
-        "feature4": "No Activation Costs",
-        "feature5": "Various Payment Methods"
-    },
-    "inbox": {
-        "name": "Inbound Channels",
-        "feature1": "Inbound SMS",
-        "feature2": "Automatic Processing",
-        "feature3": "External Systems Integration",
-        "feature4": "Real-Time Push Services",
-        "feature5": "Global Coverage"
-    },
-    "api": {
-        "name": "API",
-        "feature1": "RESTFull HTTP(S) / JSON / XML",
-        "feature2": "Online Code Samples",
-        "feature3": "Easy Integration",
-        "feature4": "Low Development Effort",
-        "feature5": "SMPP v3.4 (as alternative to API HTTPS)"
-    },
-    "ivr": {
-        "name": "IVR",
-        "feature1": "Voice Messages",
-        "feature2": "CPre-Recorded Audio (MP3)",
-        "feature3": "Text-to-Speech (TTS)",
-        "feature4": "Response Collection (DTMF)",
-        "feature5": "Automatic Processing"
-    },
-    "security": {
-        "name": "Security",
-        "feature1": "Channel Redundancy",
-        "feature2": "GDPR Compliant",
-        "feature3": "High Availability",
-        "feature4": "High Processing Power",
-        "feature5": "Extreme SLAs"
-    },
-    "geolocation": {
-        "name": "GeoLocation",
-        "feature1": "Foot Traffic Redirect",
-        "feature2": "Real-Time Campaigns",
-        "feature3": "Immediate Results",
-        "feature4": "Geographic Segments",
-        "feature5": "Demographic Segments"
-    },
-    "white": {
-        "name": "White Label",
-        "feature1": "Reseller Platform",
-        "feature2": "Look&Feel Customization",
-        "feature3": "SubAccounts Strutcture",
-        "feature4": "Vanity Domain",
-        "feature5": "Possible Reuse of Payment Gateways"
-    },
-    "url": {
-        "name": "URL Shortener",
-        "feature1": "Vanity Domain",
-        "feature2": "Unlimited Link Generation",
-        "feature3": "WebTraffic Redirection",
-        "feature4": "Detailed Statistics",
-        "feature5": "Character Savings"
-    },
-    "contact": {
-        "legend": "Get a quote",
-        "firstName": "First Name",
-        "firstNameError": "This field is mandatory",
-        "lastName": "Last Name",
-        "mail": "yourmail@gmail.com",
-        "mailError": "This field is mandatory",
-        "phoneNumber": "Phone number",
-        "alphanumeric": "Alphanumeric Numbers",
-        "international": "International receivers",
-        "message": "Let us know how we can help",
-        "messageError": "This field is mandatory",
-        "button": "Submit"
-    },
-    "footer": {
-        "section1": {
-            "head": "EZ4U",
-            "paragraph1": "Description goes here",
-            "paragraph2": "Lorem ipsum dolores",
-            "paragraph3": "em does",
-            "paragraph4": "singla de si"
-        },
-        "section2": {
-            "head": "Products",
-            "paragraph1": "Geolocation",
-            "paragraph2": "API",
-            "paragraph3": "White Label",
-            "paragraph4": "Control and Stats"
-        },
-        "section3": {
-            "head": "Blog",
-            "paragraph1": "New Partnership",
-            "paragraph2": "Case Studies",
-            "paragraph3": "New Feautre",
-            "paragraph4": "Tutorial"
-        },
-        "section4": {
-            "head": "Contact",
-            "paragraph1": "General inquiry",
-            "paragraph2": "+351 220 731 391",
-            "paragraph3": "Business",
-            "paragraph4": "comercial@ez4uteam.com",
-            "paragraph5": "Helpdesk",
-            "paragraph6": "suporte@ez4uteam.com"
-        }
-    },
-    "footerfooter": {
-        "credentials": "All rights reserved"
+    "section4": {
+      "head": "Contact",
+      "paragraph1": "General inquiry",
+      "paragraph2": "+351 220 731 391",
+      "paragraph3": "Business",
+      "paragraph4": "comercial@ez4uteam.com",
+      "paragraph5": "Helpdesk",
+      "paragraph6": "suporte@ez4uteam.com"
     }
+  },
+  "footerfooter": {
+    "credentials": "All rights reserved"
+  }
 }
