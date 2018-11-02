@@ -1,13 +1,15 @@
 import React, { Component } from "react";
 import "../../css/style.css";
+import NavbarLangItems from "./NavbarLangItems";
 
-class navbarLang extends Component {
-    render() {
-        return (
-            <div>
-            </div>
-        );
-    }
+class NavbarLang extends Component {
+  render() {
+    return (
+      <nav className="navbar__languages">
+        <NavbarLangItems />
+      </nav>
+    );
+  }
 }
 
-export default navbarLang;
+export default NavbarLang;

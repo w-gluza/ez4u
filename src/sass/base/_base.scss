@@ -1,24 +1,24 @@
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-    outline: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  outline: none;
 }
 
 html {
-    // This define what 1rem is
-    // 10px/16pc = 62,5% --> 1rem = 10px;
-    font-size: 62.5%;
-    height: 100%;
+  // This define what 1rem is
+  // 10px/16pc = 62,5% --> 1rem = 10px;
+  font-size: 62.5%;
+  height: 100%;
 }
 
 body {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    height: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  height: 100%;
 }
 
 .navbar,
@@ -26,34 +26,25 @@ body {
 .product__features,
 .clients,
 .footer__sections,
-.footer__footer__container
- 
-{
-    padding: 10vh 8vw;
+.footer__footer__container {
+  padding: 10vh 8vw;
 }
-
 
 a:link,
 a:visited,
 a:hover,
 a:active {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-fieldset{
-    border: none;
-    box-sizing: border-box;
-    padding: 0;
-    margin:0
+fieldset {
+  border: none;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
-
 
 .main__grid {
-    display: grid;
-    grid-template-columns: 1fr;
+  display: grid;
+  grid-template-columns: 1fr;
 }
-
-
-
-
-

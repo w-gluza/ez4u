@@ -1,8 +1,7 @@
 //---------------- Variables  ------------------//
 
 // Font Variables
-$font-primary: 'Roboto', sans-serif;
-
+$font-primary: "Roboto", sans-serif;
 
 // Colors Variables
 
@@ -10,7 +9,7 @@ $color-primary: #00acc1;
 $color-primary-dark: #007c91;
 
 $color-secondary: #ef5350;
-$color-secondary2: #FF6D00;
+$color-secondary2: #ff6d00;
 
 $color-grey-dark: #3f4652;
 $color-grey-light: #f5f5f5;
@@ -20,9 +19,9 @@ $color-blue-grey: #b0bec5;
 $color-black: #212121;
 $color-white: #ffffff;
 
-$color-blue-dark: rgba(38,50,56, 1);
+$color-blue-dark: rgba(38, 50, 56, 1);
 
-$box-shadow:  rgba(0, 0, 0, 0.2);
+$box-shadow: rgba(0, 0, 0, 0.2);
 
 // Size Variables
 
@@ -33,12 +32,43 @@ $checkbox-circle-width: 2rem;
 
 $checkbox-border-radius: 10rem;
 
-
-
-
 //---------------- Functions  ------------------//
 
-
-
-
 //---------------- Mixins  ------------------//
+
+// Media Querry Manager              $breakpoint
+/*
+0 - 600px       Phone                 phone
+600 - 900px     Tablet Portrait       tab-port
+900 - 1200px    Tablet lanscape       tab-land
+1200 - 1800px   'Normal' style        
+1800px +        Big desktop           big-desk
+
+1em = 16px
+*/
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 37.5em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tab-port {
+    @media (max-width: 56.25em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tab-land {
+    @media (max-width: 75em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == big-desktop {
+    @media (min-width: 112.5em) {
+      @content;
+    }
+  }
+}

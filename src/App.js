@@ -32,40 +32,18 @@ class App extends Component {
 
   render() {
     let backdrop;
-    const { i18n } = this.props;
 
     if (this.state.sideDrawerOpen) {
       backdrop = <Backdrop click={this.backdropClickHandler} />;
     }
     return (
       <BrowserRouter>
-        <div style={{ height: "100%" }}>
-          <nav className="navbar___languages">
-            <a
-              className="navbar__languages__item"
-              onClick={() => i18n.changeLanguage("en")}
-            >
-              en
-            </a>
-            <a
-              className="navbar__languages__item"
-              onClick={() => i18n.changeLanguage("pt")}
-            >
-              pt
-            </a>
-            <a
-              className="navbar__languages__item"
-              onClick={() => i18n.changeLanguage("es")}
-            >
-              es
-            </a>
-          </nav>
-
+        <div>
           <Navbar drawerClickHandler={this.drawerToggleClickHandler} />
           <SideDrawer show={this.state.sideDrawerOpen} />
           {backdrop}
 
-          <main style={{ marginTop: "0px" }}>
+          <main className="blurred">
             <Header />
             <Route exact path="/" component={FeaturesItems} />
             <Route exact path="/" component={Contact} />

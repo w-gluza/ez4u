@@ -146,6 +146,9 @@ class Test extends Component {
       return { visibleFeature: id };
     });
   }
+  // shouldComponentUpdate($I18Next, lang) {
+  //   return $I18Next.language !== $I18Next.language;
+  // }
   render() {
     const feature = this.state.visibleFeature;
     return (

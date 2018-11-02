@@ -15,6 +15,10 @@ p {
 .footer__header {
   font-size: 1.6rem;
   text-transform: uppercase;
+
+  @include respond(phone) {
+    font-size: 80%;
+  }
 }
 
 .footer__list {
@@ -25,9 +29,9 @@ p {
 }
 
 .footer__list-item-subhead {
- font-weight: 300;
+  font-weight: 300;
 }
 
 .footer__list-item a {
-  color: $color-primary
+  color: $color-primary;
 }
