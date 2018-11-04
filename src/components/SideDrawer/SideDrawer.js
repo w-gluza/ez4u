@@ -5,13 +5,13 @@ import NavigationItems from "../Navbar/NavigationItems/NavigationItems";
 
 const sideDrawer = props => {
   let drawerClasses = "side-drawer";
-  let blurredClasses = "blurred";
+  let blurredClasses = " blurred";
   if (props.show) {
     drawerClasses = "side-drawer open";
     blurredClasses = "blurred open";
   }
   return (
-    <nav className={drawerClasses + blurredClasses}>
+    <nav className={drawerClasses}>
       <NavigationItems />
       <NavbarLang />
     </nav>

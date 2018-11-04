@@ -1,22 +1,29 @@
 .toggle-button {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 44px;
-    width: 30px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    box-sizing: border-box;
-    padding: 10px;
-  }
-  
-  .toggle-button:focus {
-    outline: none;
-  }
-  
-  .toggle-button__line {
-    width: 30px;
-    height: 1px;
-    background: $color-grey-dark;
-  }
+  height: 44px;
+  width: 30px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.toggle-button:focus {
+  outline: none;
+}
+
+.toggle-button__line {
+  width: 30px;
+  height: 1px;
+  background: $color-grey-dark;
+  margin: 9px;
+  transition: transform(rotate(45deg));
+}
+
+.toggle-button:checked {
+  width: 30px;
+  height: 3px;
+  background: blue;
+  margin: 9px;
+  z-index: 502;
+}

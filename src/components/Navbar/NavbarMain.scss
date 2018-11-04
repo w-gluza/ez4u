@@ -14,20 +14,25 @@
   justify-items: start;
 }
 
+.navbar__mobile {
+  font-size: 5rem;
+  letter-spacing: 0.2rem;
+  font-weight: 300;
+  grid-gap: 2.5rem;
+}
+
 .navigation__item,
-.navigation__item a{
+.navigation__item a {
   color: $color-primary-dark;
   list-style: none;
 }
-
 
 .navbar__logo {
   height: 5rem;
 }
 
-
 @media (max-width: 768px) {
-  .navbar_navigation-items {
+  .navbar {
     display: none;
   }
 
@@ -38,7 +43,6 @@
     height: auto;
     background-color: #f5f5f5;
   }
-  
 }
 
 @media (min-width: 769px) {
@@ -46,7 +50,6 @@
     display: none;
   }
 }
-
 
 @media (max-width: 769px) {
   .navbar {

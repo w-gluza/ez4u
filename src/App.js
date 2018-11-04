@@ -32,9 +32,11 @@ class App extends Component {
 
   render() {
     let backdrop;
+    let blurredClasses = "blurred";
 
     if (this.state.sideDrawerOpen) {
       backdrop = <Backdrop click={this.backdropClickHandler} />;
+      blurredClasses = "blurred open";
     }
     return (
       <BrowserRouter>
@@ -43,7 +45,7 @@ class App extends Component {
           <SideDrawer show={this.state.sideDrawerOpen} />
           {backdrop}
 
-          <main className="blurred">
+          <main className={blurredClasses}>
             <Header />
             <Route exact path="/" component={FeaturesItems} />
             <Route exact path="/" component={Contact} />
