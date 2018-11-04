@@ -1,5 +1,4 @@
-@import '../../node_modules/normalize.css/normalize';
-
+@import "../../node_modules/normalize.css/normalize";
 
 @import "abstracts/abstracts";
 
@@ -7,40 +6,23 @@
 @import "base/base";
 @import "base/typography";
 
-
 // MOBILE ONLY
-@import "../components/Backdrop/Backdrop.scss";
 @import "../components/SideDrawer/SideDrawer.scss";
-@import "../components/SideDrawer/DrawerToggleButton.scss";
-
+@import "../components/SideDrawer/BurgerOpen.scss";
 
 // DESKTOP
 @import "../components/Navbar/NavbarMain.scss";
 @import "../components/NavbarLang/NavbarLang.scss";
-
 
 @import "../components/Header/Header.scss";
 
 @import "../components/Features/FeaturesItem.scss";
 @import "../components/Features/FeaturesItems.scss";
 
-
 @import "../components/Contact/Contact.scss";
-
-
 
 @import "../components/Clients/Clients.scss";
 @import "../components/Clients/FeatureClients.scss";
 
-
 @import "../components/Footer/FooterMain.scss";
 @import "../components/Footer/FooterFooter.scss";
-
-
-
-
-
-
-
-
-

@@ -4,7 +4,7 @@ import { BrowserRouter, Route } from "react-router-dom";
 
 import SideDrawer from "./components/SideDrawer/SideDrawer";
 // import Backdrop from "./components/Backdrop/Backdrop";
-import DrawerToggleButton from "./components/SideDrawer/DrawerToggleButton";
+import BurgerOpen from "./components/SideDrawer/BurgerOpen";
 
 import Header from "./containers/Header";
 import Navbar from "./containers/Navbar";
@@ -49,7 +49,7 @@ class App extends React.Component {
         <div>
           <Navbar click={this.state.drawerToggleClickHandler} />
           <div className="toolbar__toggle-button">
-            <DrawerToggleButton click={this.drawerToggleClickHandler} />
+            <BurgerOpen click={this.drawerToggleClickHandler} />
           </div>
           <SideDrawer show={this.state.sideDrawerOpen} />
           {this.state.sideDrawerOpen ? (
