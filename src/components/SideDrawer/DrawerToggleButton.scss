@@ -19,11 +19,3 @@
   margin: 9px;
   transition: transform(rotate(45deg));
 }
-
-.toggle-button:checked {
-  width: 30px;
-  height: 3px;
-  background: blue;
-  margin: 9px;
-  z-index: 502;
-}

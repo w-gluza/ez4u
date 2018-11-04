@@ -378,14 +378,6 @@ p {
 .footer__list-item a {
   color: #00acc1; }
 
-.backdrop {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 500; }
-
 .side-drawer {
   height: 100%;
   background: rgba(255, 255, 255, 0.8);
@@ -393,7 +385,7 @@ p {
   position: fixed;
   top: 0;
   left: 0;
-  width: 95%;
+  width: 100%;
   z-index: 200;
   transform: translateX(-100%);
   transition: transform 0.3s ease-out;
@@ -433,13 +425,6 @@ p {
   margin: 9px;
   transition: transform(rotate(45deg)); }
 
-.toggle-button:checked {
-  width: 30px;
-  height: 3px;
-  background: blue;
-  margin: 9px;
-  z-index: 502; }
-
 .navbar {
   display: grid;
   grid-template-columns: auto repeat(5, max-content);
@@ -467,6 +452,9 @@ p {
 .navbar__logo {
   height: 5rem; }
 
+#mobileLogo {
+  display: none; }
+
 @media (max-width: 768px) {
   .navbar {
     display: none; }
@@ -475,7 +463,16 @@ p {
     left: 0;
     width: 100%;
     height: auto;
-    background-color: #f5f5f5; } }
+    background-color: #f5f5f5; }
+  #mobileLogo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 3rem;
+    height: 3rem;
+    background-color: red; }
+  #desktopLogo {
+    display: none; } }
 
 @media (min-width: 769px) {
   .toolbar__toggle-button {
@@ -484,6 +481,15 @@ p {
 @media (max-width: 769px) {
   .navbar {
     display: none; } }
+
+.backdrop {
+  position: fixed;
+  width: 5rem;
+  height: 5rem;
+  top: 0;
+  right: 0;
+  z-index: 500;
+  background-color: aqua; }
 
 .navbar__languages {
   display: grid;

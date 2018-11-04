@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "../../css/style.css";
 import NavigationItems from "./NavigationItems/NavigationItems";
 
-class navbarMain extends Component {
+class NavbarDesktop extends Component {
   render() {
     return (
       <nav className="navbar">
@@ -12,4 +12,4 @@ class navbarMain extends Component {
   }
 }
 
-export default navbarMain;
+export default NavbarDesktop;

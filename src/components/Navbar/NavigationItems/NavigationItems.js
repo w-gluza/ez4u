@@ -10,7 +10,13 @@ class navigationItems extends Component {
   render() {
     return (
       <React.Fragment>
-        <li className="navigation__item">
+        <li className="navigation__item" id="desktopLogo">
+          <NavLink exact to="/">
+            <Icon name="logo" className="navbar__logo " alt="EZ4U logo" />{" "}
+          </NavLink>
+        </li>
+
+        <li className="navigation__item" id="mobileLogo">
           <NavLink exact to="/">
             <Icon name="logo" className="navbar__logo " alt="EZ4U logo" />{" "}
           </NavLink>

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Icon from "../../assets/icons/";
 import { translate } from "react-i18next";
 
-class Test extends Component {
+class FeaturesItems extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -170,9 +170,9 @@ class Test extends Component {
         </div>
         <div className="features__details__grid">
           {this.state.features.map(
-            features =>
+            (features, index) =>
               feature === features.id && (
-                <div className="feature__details__container">
+                <div key={index} className="feature__details__container">
                   <p className="feature__heading" id={features.id}>
                     #{features.name}
                   </p>
@@ -213,4 +213,4 @@ class Test extends Component {
     );
   }
 }
-export default translate("common")(Test);
+export default translate("common")(FeaturesItems);
