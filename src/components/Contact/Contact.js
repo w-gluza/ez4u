@@ -31,14 +31,14 @@ class Contact extends Component {
     let messageError = "";
 
     if (!this.state.firstName) {
-      firstNameError = "This field is mandatory";
+      firstNameError = this.props.t("contact.firstNameError");
     }
     if (!this.state.mail.includes("@")) {
-      mailError = "This field is mandatory";
+      mailError = this.props.t("contact.mailError");
     }
 
     if (!this.state.message) {
-      messageError = "This field is mandatory";
+      messageError = this.props.t("contact.messageError");
     }
 
     if (mailError || firstNameError || messageError) {
@@ -71,6 +71,7 @@ class Contact extends Component {
                 value={this.state.firstName}
                 onChange={this.change}
                 maxLength="20"
+                firstNameError={this.props.t("contact.firstName")}
               />
               <div className="contact__error_message">
                 {this.state.firstNameError}
