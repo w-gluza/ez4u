@@ -391,7 +391,11 @@ p {
   transition: transform 0.3s ease-out;
   box-sizing: border-box;
   color: white;
-  transition: all 0.4s ease 0s; }
+  transition: all 0.4s ease 0s;
+  padding: 25%;
+  font-size: 4.5rem;
+  font-weight: 100;
+  text-align: center; }
 
 .side-drawer:checked {
   transition: all 0.4s ease 0s; }
@@ -406,8 +410,8 @@ p {
 .blurred.open {
   filter: blur(5px); }
 
-.toggle-button {
-  height: 44px;
+.burger__button {
+  height: 50px;
   width: 30px;
   background: transparent;
   border: none;
@@ -415,17 +419,48 @@ p {
   box-sizing: border-box;
   padding: 5px; }
 
-.toggle-button:focus {
+.burger__close {
+  display: none; }
+
+.burger__button:focus {
   outline: none; }
 
-.toggle-button__line {
+.burger__button__line {
   width: 30px;
   height: 1px;
   background: #3f4652;
-  margin: 9px;
+  margin: 10px;
   transition: transform(rotate(45deg)); }
 
-.navbar {
+.backdrop {
+  position: absolute;
+  box-sizing: border-box;
+  width: 5rem;
+  height: 5rem;
+  border: none;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+  z-index: 500; }
+
+.backdrop:focus {
+  outline: none; }
+
+.backdrop__button__line {
+  position: absolute;
+  top: 23px;
+  right: 10px;
+  width: 35px;
+  height: 1px;
+  background: #3f4652; }
+
+.backdrop__button__line:nth-child(1) {
+  transform: rotate(45deg); }
+
+.backdrop__button__line:nth-child(2) {
+  transform: rotate(-45deg); }
+
+.navbarDesktop {
   display: grid;
   grid-template-columns: auto repeat(5, max-content);
   padding-top: 1rem;
@@ -456,7 +491,7 @@ p {
   display: none; }
 
 @media (max-width: 768px) {
-  .navbar {
+  .navbarDesktop {
     display: none; }
   .navbar_mobile__container {
     top: 0;
@@ -481,15 +516,6 @@ p {
 @media (max-width: 769px) {
   .navbar {
     display: none; } }
-
-.backdrop {
-  position: fixed;
-  width: 5rem;
-  height: 5rem;
-  top: 0;
-  right: 0;
-  z-index: 500;
-  background-color: aqua; }
 
 .navbar__languages {
   display: grid;
@@ -553,9 +579,6 @@ p {
     grid-row-start: 8;
     letter-spacing: 0.5rem;
     font-size: 1rem; } }
-
-.feature__item {
-  color: red; }
 
 .features__section {
   background: #ffffff;
@@ -822,13 +845,11 @@ input:checked[type="checkbox"]:before {
   100% {
     opacity: 0; } }
 
-.footer {
-  background-color: #f5f5f5; }
-
 .footer__sections {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  grid-gap: 3vw; }
+  grid-gap: 3vw;
+  background-color: #f5f5f5; }
 
 .footer__footer__container {
   bottom: 0;

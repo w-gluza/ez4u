@@ -31,7 +31,7 @@ class Contact extends Component {
     let messageError = "";
 
     if (!this.state.firstName) {
-      firstNameError = this.props.t("contact.firstNameError");
+      firstNameError = this.props.t("contact.mailError");
     }
     if (!this.state.mail.includes("@")) {
       mailError = this.props.t("contact.mailError");

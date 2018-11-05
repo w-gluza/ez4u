@@ -11,18 +11,20 @@
 @import "../components/SideDrawer/BurgerOpen.scss";
 
 // DESKTOP
-@import "../components/Navbar/NavbarMain.scss";
-@import "../components/NavbarLang/NavbarLang.scss";
-
-@import "../components/Header/Header.scss";
-
-@import "../components/Features/FeaturesItem.scss";
-@import "../components/Features/FeaturesItems.scss";
-
-@import "../components/Contact/Contact.scss";
-
 @import "../components/Clients/Clients.scss";
 @import "../components/Clients/FeatureClients.scss";
 
+@import "../components/Contact/Contact.scss";
+
+@import "../components/Features/FeaturesItems.scss";
+
+@import "../components/Header/HeaderMain.scss";
+
 @import "../components/Footer/FooterMain.scss";
 @import "../components/Footer/FooterFooter.scss";
+
+@import "../components/Navigation/NavDesktop.scss";
+@import "../components/Navigation/NavMobile.scss";
+
+@import "../components/SideDrawer/BurgerButton.scss";
+@import "../components/SideDrawer/SideDrawer.scss";

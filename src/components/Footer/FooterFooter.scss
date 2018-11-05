@@ -1,0 +1,23 @@
+.footer__footer__container {
+  bottom: 0;
+  background-color: $color-white;
+  align-items: center;
+
+  display: grid;
+  grid-template-columns: minmax(max-content, auto) repeat(
+      3,
+      minmax(min-content, 2rem)
+    );
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  grid-gap: 0.5rem;
+}
+
+.icon__social {
+  height: 3rem;
+  fill: $color-grey-dark;
+
+  &:hover {
+    fill: $color-primary;
+  }
+}

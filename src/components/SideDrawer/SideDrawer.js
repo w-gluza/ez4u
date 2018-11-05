@@ -1,17 +1,19 @@
 import React from "react";
 import "../../css/style.css";
-import NavbarLang from "../NavbarLang/NavbarLang";
-import NavigationItems from "../Navbar/NavigationItems/NavigationItems";
+
+import NavigationItems from "../Navigation/NavigationItems/NavigationItems";
+import LangItems from "../Navigation/NavigationItems/LangItems";
 
 const sideDrawer = props => {
   let drawerClasses = "side-drawer";
   if (props.show) {
     drawerClasses = "side-drawer open";
   }
+
   return (
     <nav className={drawerClasses}>
-      <NavigationItems />
-      <NavbarLang />
+      <NavigationItems className="hello" />
+      <LangItems />
     </nav>
   );
 };

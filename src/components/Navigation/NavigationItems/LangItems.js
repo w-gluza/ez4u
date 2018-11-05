@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "../../css/style.css";
+import "../../../css/style.css";
 import { translate } from "react-i18next";
 
 class NavbarLangItems extends Component {

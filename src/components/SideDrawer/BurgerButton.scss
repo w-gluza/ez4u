@@ -1,0 +1,60 @@
+.burger__button {
+  height: 50px;
+  width: 30px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.burger__close {
+  display: none;
+}
+
+.burger__button:focus {
+  outline: none;
+}
+
+.burger__button__line {
+  width: 30px;
+  height: 1px;
+  background: $color-grey-dark;
+  margin: 10px;
+  transition: transform(rotate(45deg));
+}
+
+.backdrop {
+  position: absolute;
+  box-sizing: border-box;
+  width: 5rem;
+  height: 5rem;
+  border: none;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+  z-index: 500;
+}
+
+.backdrop:focus {
+  outline: none;
+}
+
+.backdrop__button__line {
+  position: absolute;
+  top: 23px;
+  right: 10px;
+  width: 35px;
+  height: 1px;
+  background: $color-grey-dark;
+}
+
+.backdrop__button__line:nth-child(1) {
+  // background: aqua;
+  transform: rotate(45deg);
+}
+
+.backdrop__button__line:nth-child(2) {
+  // background: pink;
+  transform: rotate(-45deg);
+}
