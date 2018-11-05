@@ -1,3 +1,8 @@
+.burgerBar {
+  width: 100%;
+  height: auto;
+  background-color: $color-grey-light;
+}
 .burger__button {
   height: 50px;
   width: 30px;
@@ -6,14 +11,9 @@
   cursor: pointer;
   box-sizing: border-box;
   padding: 5px;
-}
-
-.burger__close {
-  display: none;
-}
-
-.burger__button:focus {
-  outline: none;
+  &:burger__button:focus {
+    outline: none;
+  }
 }
 
 .burger__button__line {
@@ -24,7 +24,8 @@
   transition: transform(rotate(45deg));
 }
 
-.backdrop {
+// ----------- "X" button style -----------  //
+.cross__button {
   position: absolute;
   box-sizing: border-box;
   width: 5rem;
@@ -34,27 +35,24 @@
   top: 0;
   right: 0;
   z-index: 500;
+
+  &:focus {
+    outline: none;
+  }
 }
 
-.backdrop:focus {
-  outline: none;
-}
-
-.backdrop__button__line {
+.cross__button__line {
   position: absolute;
   top: 23px;
   right: 10px;
   width: 35px;
   height: 1px;
   background: $color-grey-dark;
-}
 
-.backdrop__button__line:nth-child(1) {
-  // background: aqua;
-  transform: rotate(45deg);
-}
-
-.backdrop__button__line:nth-child(2) {
-  // background: pink;
-  transform: rotate(-45deg);
+  &:nth-child(1) {
+    transform: rotate(45deg);
+  }
+  &:nth-child(2) {
+    transform: rotate(-45deg);
+  }
 }

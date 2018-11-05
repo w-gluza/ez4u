@@ -1,9 +1,10 @@
 import React from "react";
 import { translate } from "react-i18next";
 import { BrowserRouter, Route } from "react-router-dom";
+import Headroom from "react-headroom";
 
-import SideDrawer from "./components/SideDrawer/SideDrawer";
-import BurgerButton from "./components/SideDrawer/BurgerButton";
+import NavMobile from "./components/Navigation/NavMobile";
+import BurgerButton from "./components/Navigation/BurgerButton";
 
 import Header from "./containers/Header";
 import Navbar from "./containers/Navbar";
@@ -19,42 +20,47 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      sideDrawerOpen: false
+      NavMobileOpen: false
     };
-    this.drawerToggleClickHandler = this.drawerToggleClickHandler.bind(this);
-    this.backdropClickHandler = this.backdropClickHandler.bind(this);
+    this.BurgerButtonClickHandler = this.BurgerButtonClickHandler.bind(this);
+    this.CrossButtonClickHandler = this.CrossButtonClickHandler.bind(this);
   }
 
-  drawerToggleClickHandler = () => {
+  BurgerButtonClickHandler = () => {
     this.setState({
-      sideDrawerOpen: true
+      NavMobileOpen: true
     });
   };
 
-  backdropClickHandler = () => {
+  CrossButtonClickHandler = () => {
     this.setState({
-      sideDrawerOpen: false
+      NavMobileOpen: false
     });
   };
 
   render() {
     let blurredClasses = "blurred";
 
-    if (this.state.sideDrawerOpen) {
+    if (this.state.NavMobileOpen) {
       blurredClasses = "blurred open";
     }
     return (
       <BrowserRouter>
         <div>
-          <Navbar click={this.state.drawerToggleClickHandler} />
-          <div className="toolbar__toggle-button">
-            <BurgerButton click={this.drawerToggleClickHandler} />
-          </div>
-          <SideDrawer show={this.state.sideDrawerOpen} />
-          {this.state.sideDrawerOpen ? (
-            <div className="backdrop" onClick={this.backdropClickHandler}>
-              <div className="backdrop__button__line" />
-              <div className="backdrop__button__line" />
+          <Navbar click={this.state.BurgerButtonClickHandler} />
+          <Headroom>
+            <div className="toolbar__toggle-button">
+              <BurgerButton click={this.BurgerButtonClickHandler} />
+            </div>
+          </Headroom>
+          <NavMobile show={this.state.NavMobileOpen} />
+          {this.state.NavMobileOpen ? (
+            <div
+              className="cross__button"
+              onClick={this.CrossButtonClickHandler}
+            >
+              <div className="cross__button__line" />
+              <div className="cross__button__line" />
             </div>
           ) : null}
 

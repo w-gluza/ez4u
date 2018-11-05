@@ -4,16 +4,14 @@ import "../css/style.css";
 // import NavbarLang from "../components/NavbarLang/NavbarLang";
 // import NavbarDesktop from "../components/Navigation/NavigationItems/NavbarLangItems";
 import NavbarDesktop from "../components/Navigation/NavDesktop";
-import sideDrawer from "../components/SideDrawer/SideDrawer";
+// import sideDrawer from "../components/SideDrawer/SideDrawer";
 
 import Headroom from "react-headroom";
 
 const toolbar = props => (
   <nav>
     {/* Navbar Mobile */}
-    <Headroom>
-      <sideDrawer />
-    </Headroom>
+    {/* <sideDrawer /> */}
 
     {/* Navbar Dektop */}
     <Headroom>
