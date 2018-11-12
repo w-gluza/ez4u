@@ -16,18 +16,20 @@
   justify-items: start;
 }
 
-.navigation__item,
-.navigation__item a {
+li.navigation__item,
+li.navigation__item a {
   color: $color-blue-dark;
   list-style: none;
   border-bottom: none;
   cursor: pointer;
 }
-.navigation__item a.active,
-.navigation__item a.hover {
-  border-bottom: 1px solid $color-primary;
+li.navigation__item a.active,
+li.navigation__item a:hover {
   color: $color-primary;
-  transition: border-bottom 2s;
+}
+
+div.navbarDesktop li.navigation__item a.active {
+  border-bottom: 1px solid $color-primary;
 }
 .navbar__logo {
   height: 5rem;

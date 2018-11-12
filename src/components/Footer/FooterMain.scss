@@ -21,7 +21,26 @@
   padding-top: 1rem;
 }
 
-.button__footer {
+.button__footer,
+.button__footer a,
+.button__footer a.active {
+  margin-top: 2rem;
   background: $color-primary;
   color: $color-white;
 }
+
+.footer__link {
+  color: $color-primary;
+}
+
+ul.footer__list li.navigation__item a:hover {
+  color: $color-primary;
+  border-bottom: none;
+}
+// .footer__nav a {
+//   color: $color-black;
+// }
+
+// .footer__nav a.active {
+//   color: $color-primary;
+// }

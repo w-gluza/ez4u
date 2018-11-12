@@ -3,12 +3,16 @@ import "../../css/style.css";
 import Icon from "../../assets/icons/";
 
 import { translate } from "react-i18next";
+import LangItems from "../Navigation/NavigationItems/LangItems";
 
 class FooterFooter extends Component {
   render() {
     return (
       <div className="footer__footer__container">
-        <p>&copy; {this.props.t("footerfooter.credentials")}</p>
+        {/* <p> {this.props.t("footerfooter.credentials")}</p> */}
+        <div className="lang__footer">
+          <LangItems />
+        </div>
 
         <a href="https://www.facebook.com/ez4uteam/">
           <Icon name="facebook" className="icon__social" alt="Facebook logo" />

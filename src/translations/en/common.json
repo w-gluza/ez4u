@@ -101,15 +101,10 @@
     "section1": {
       "head": "EZ4U",
       "paragraph1": "EZ4U, since its foundation, is ruled by the most demanding and strict ethic patterns, with absolute warranty of confidentiality of each project. ",
-      "paragraph2": "Check Us and create your first account!",
       "button": "Let's Talk"
     },
     "section2": {
-      "head": "Products",
-      "paragraph1": "Geolocation",
-      "paragraph2": "API",
-      "paragraph3": "White Label",
-      "paragraph4": "Control and Stats"
+      "head": "Site Map"
     },
     "section3": {
       "head": "Blog",
@@ -129,6 +124,6 @@
     }
   },
   "footerfooter": {
-    "credentials": "All rights reserved"
+    "credentials": "EN/ES/PT"
   }
 }

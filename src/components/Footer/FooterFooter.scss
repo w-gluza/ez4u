@@ -13,6 +13,16 @@
   grid-gap: 0.5rem;
 }
 
+.lang__footer {
+  display: grid;
+  grid-template-columns: repeat(3, 2rem);
+  grid-gap: 1rem;
+}
+.lang__footer a:hover,
+.lang__footer a:active {
+  color: $color-primary;
+}
+
 .icon__social {
   height: 3rem;
   fill: $color-grey-dark;

@@ -1,27 +1,15 @@
 import React, { Component } from "react";
 import "../../css/style.css";
 
-class Clients extends Component {
-  render() {
-    const { clientsArray } = this.props;
-    const clientsList = clientsArray.clientsArray
-      .reverse()
-      .map((company, i) => {
-        return (
-          <div key={company.id}>
-            <img
-              className="clients__images"
-              src={company.image}
-              alt={company.altIMG}
-            />
-          </div>
-        );
-      });
+import { translate } from "react-i18next";
+import Testimonials from "../Testimonials/Testimonials";
 
+class About extends Component {
+  render() {
     return (
       <div>
-        <header className="banner">
-          <div className="banner__clients" />
+        <header className="banner__clients">
+          <div className="banner__about" />
         </header>
         <div className="features__text__container">
           <div>
@@ -38,10 +26,10 @@ class Clients extends Component {
             </p>
           </div>
         </div>
-        <div className="clients">{clientsList}</div>
+        <Testimonials />
       </div>
     );
   }
 }
 
-export default Clients;
+export default translate("common")(About);

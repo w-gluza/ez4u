@@ -13,6 +13,8 @@ import Footer from "./containers/Footer";
 
 import FeaturesItems from "./components/Features/FeaturesItems";
 
+import About from "./components/About/About";
+import Blog from "./components/Blog/Blog";
 import ContactForm from "./components/Contact/ContactForm";
 import Clients from "./components/Clients/Clients";
 import Feature from "./components/Clients/FeatureClients";
@@ -69,6 +71,8 @@ class App extends React.Component {
             <Route exact path="/" component={Header} />
             <Route exact path="/" component={FeaturesItems} />
             <Route exact path="/" component={ContactForm} />
+            <Route exact path="/about" component={About} />
+            <Route exact path="/blog" component={Blog} />
             <Route exact path="/contact" component={Contact} />
 
             <Route
