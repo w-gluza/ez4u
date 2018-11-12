@@ -8,11 +8,12 @@ import BurgerButton from "./components/Navigation/BurgerButton";
 
 import Header from "./containers/Header";
 import Navbar from "./containers/Navbar";
+import Contact from "./containers/Contact";
 import Footer from "./containers/Footer";
 
 import FeaturesItems from "./components/Features/FeaturesItems";
 
-import Contact from "./components/Contact/Contact";
+import ContactForm from "./components/Contact/ContactForm";
 import Clients from "./components/Clients/Clients";
 import Feature from "./components/Clients/FeatureClients";
 
@@ -65,9 +66,9 @@ class App extends React.Component {
           ) : null}
 
           <main className={blurredClasses}>
-            <Header />
+            <Route exact path="/" component={Header} />
             <Route exact path="/" component={FeaturesItems} />
-            <Route exact path="/" component={Contact} />
+            <Route exact path="/" component={ContactForm} />
             <Route exact path="/contact" component={Contact} />
 
             <Route

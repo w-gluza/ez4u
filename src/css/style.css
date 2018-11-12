@@ -371,6 +371,9 @@ p {
   font-weight: 100;
   line-height: 1.7;
   list-style: none; }
+  @media (max-width: 37.5em) {
+    .footer__list {
+      font-size: 80%; } }
 
 .footer__list-item-subhead {
   font-weight: 300; }
@@ -383,9 +386,10 @@ p {
   height: auto;
   background-color: #f5f5f5; }
 
+.burger__button.open {
+  display: none; }
+
 .burger__button {
-  height: 50px;
-  width: 30px;
   background: transparent;
   border: none;
   cursor: pointer;
@@ -440,7 +444,7 @@ p {
   box-sizing: border-box;
   color: white;
   transition: all 0.4s ease 0s;
-  padding: 25%;
+  padding-top: 25%;
   font-size: 4.5rem;
   font-weight: 100;
   text-align: center; }
@@ -458,6 +462,16 @@ p {
 .blurred.open {
   filter: blur(5px); }
 
+.nav__lang--mob {
+  display: grid;
+  grid-template-columns: repeat(3, 5rem);
+  padding-top: 10rem;
+  color: rgba(33, 33, 33, 0.8);
+  font-size: 3rem;
+  grid-gap: 0.5rem;
+  justify-content: center;
+  cursor: pointer; }
+
 .clients {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -471,7 +485,7 @@ p {
 
 .clients__feature--container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   padding: 10rem 0;
   grid-gap: 5rem;
   text-align: center;
@@ -488,6 +502,19 @@ p {
     opacity: 0.7; }
   100% {
     opacity: 0; } }
+
+.gmaps {
+  width: 100%;
+  height: 35rem;
+  border: none; }
+
+.banner {
+  height: 35rem;
+  background-image: url(./banner.jpeg);
+  background-size: cover; }
+
+.banner__contact {
+  background-position: center; }
 
 .contact {
   padding: 10vh 20vw; }
@@ -769,9 +796,26 @@ input:checked[type="checkbox"]:before {
 
 .footer__sections {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   grid-gap: 3vw;
   background-color: #f5f5f5; }
+  @media (max-width: 37.5em) {
+    .footer__sections {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr)); } }
+
+.footer__logo {
+  width: 10rem;
+  list-style: none; }
+
+.footer__header {
+  height: 5rem;
+  justify-items: center;
+  padding-top: 1rem; }
+
+.button__footer {
+  background: #00acc1;
+  color: #ffffff; }
 
 .footer__footer__container {
   bottom: 0;
@@ -794,6 +838,8 @@ input:checked[type="checkbox"]:before {
   grid-template-columns: auto repeat(5, max-content);
   padding-top: 1rem;
   padding-bottom: 1rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
   background-color: #ffffff;
   font-size: 2rem;
   letter-spacing: 0.2rem;
@@ -804,8 +850,16 @@ input:checked[type="checkbox"]:before {
 
 .navigation__item,
 .navigation__item a {
-  color: #007c91;
-  list-style: none; }
+  color: #263238;
+  list-style: none;
+  border-bottom: none;
+  cursor: pointer; }
+
+.navigation__item a.active,
+.navigation__item a.hover {
+  border-bottom: 1px solid #00acc1;
+  color: #00acc1;
+  transition: border-bottom 2s; }
 
 .navbar__logo {
   height: 5rem; }
@@ -834,23 +888,20 @@ input:checked[type="checkbox"]:before {
   .navbar {
     display: none; } }
 
-.navbar__languages {
+.nav__lang--desk {
   display: grid;
   grid-template-columns: repeat(3, 5rem);
-  padding: 0.5rem 8rem;
+  padding: 0.5rem 5rem;
   background-color: #f5f5f5;
   font-size: 1.5rem;
   font-weight: 100;
-  justify-items: center;
-  align-items: center;
+  justify-items: end;
   justify-content: end;
-  grid-gap: 0.25rem; }
-
-.navbar__languages__item {
+  grid-gap: 0.25rem;
   color: #00acc1; }
 
 @media (max-width: 768px) {
-  .navbar__languages {
+  .nav__lang--desk {
     display: none; } }
 
 .nav__mobile {
@@ -867,7 +918,7 @@ input:checked[type="checkbox"]:before {
   box-sizing: border-box;
   color: white;
   transition: all 0.4s ease 0s;
-  padding: 25%;
+  padding-top: 25%;
   font-size: 4.5rem;
   font-weight: 100;
   text-align: center; }
@@ -884,3 +935,13 @@ input:checked[type="checkbox"]:before {
 
 .blurred.open {
   filter: blur(5px); }
+
+.nav__lang--mob {
+  display: grid;
+  grid-template-columns: repeat(3, 5rem);
+  padding-top: 10rem;
+  color: rgba(33, 33, 33, 0.8);
+  font-size: 3rem;
+  grid-gap: 0.5rem;
+  justify-content: center;
+  cursor: pointer; }

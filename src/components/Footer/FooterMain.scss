@@ -1,6 +1,27 @@
 .footer__sections {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   grid-gap: 3vw;
   background-color: $color-grey-light;
+
+  @include respond(phone) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+  }
+}
+
+.footer__logo {
+  width: 10rem;
+  list-style: none;
+}
+
+.footer__header {
+  height: 5rem;
+  justify-items: center;
+  padding-top: 1rem;
+}
+
+.button__footer {
+  background: $color-primary;
+  color: $color-white;
 }

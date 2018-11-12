@@ -1,26 +1,30 @@
 .clients__feature--container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    padding: 10rem 0;
-    grid-gap: 5rem;
-    text-align: center;
-    background:$color-grey-dark;
-
-
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  padding: 10rem 0;
+  grid-gap: 5rem;
+  text-align: center;
+  background: $color-grey-dark;
 }
 
 // I can't figure out how to not to change speed in 2 places
-// I have now const speed = 2s in Feature.js and 
+// I have now const speed = 2s in Feature.js and
 // I need to have the same speed in animation below
 // Seems like not the most optimal way of doing that
 
 .clients__images--features {
-    height: 3rem;
-	animation: feature-clients-animate 2s ease-in-out;
+  height: 3rem;
+  animation: feature-clients-animate 2s ease-in-out;
 }
 
 @keyframes feature-clients-animate {
-    0% {opacity: 0;}
-    50% {opacity: 0.7;}
-    100% {opacity: 0;}
-   }
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0;
+  }
+}

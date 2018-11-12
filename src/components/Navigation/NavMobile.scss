@@ -14,7 +14,7 @@
   box-sizing: border-box;
   color: white;
   transition: all 0.4s ease 0s;
-  padding: 25%;
+  padding-top: 25%;
   font-size: 4.5rem;
   font-weight: 100;
   text-align: center;
@@ -36,4 +36,15 @@
 
 .blurred.open {
   filter: blur(5px);
+}
+
+.nav__lang--mob {
+  display: grid;
+  grid-template-columns: repeat(3, 5rem);
+  padding-top: 10rem;
+  color: rgba($color-black, 0.8);
+  font-size: 3rem;
+  grid-gap: 0.5rem;
+  justify-content: center;
+  cursor: pointer;
 }

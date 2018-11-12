@@ -7,7 +7,7 @@ class NavbarDesktop extends Component {
   render() {
     return (
       <nav>
-        <div className="navbar__languages">
+        <div className="nav__lang--desk">
           <LangItems />
         </div>
         <div className="navbarDesktop">

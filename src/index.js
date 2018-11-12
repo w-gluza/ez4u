@@ -23,7 +23,6 @@ i18next.init({
     pt: {
       common: common_pt
     },
-
     es: {
       common: common_es
     }

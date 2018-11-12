@@ -3,9 +3,10 @@
   height: auto;
   background-color: $color-grey-light;
 }
+.burger__button.open {
+  display: none;
+}
 .burger__button {
-  height: 50px;
-  width: 30px;
   background: transparent;
   border: none;
   cursor: pointer;

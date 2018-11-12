@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "../../css/style.css";
-// import Icon from "../../assets/icons/";
+import Icon from "../../assets/icons/";
 
 import { translate } from "react-i18next";
 
@@ -10,7 +10,10 @@ class Footer extends Component {
       <div className="footer__sections">
         <div className="footer__section">
           <div className="footer__header">
-            {this.props.t("footer.section1.head")}
+            <a href="https://www.linkedin.com/company/ez4u/">
+              <Icon name="logo" className="footer__logo" alt="EZ4U logo" />
+            </a>
+            {/* {this.props.t("footer.section1.head")} */}
           </div>
           <ul className="footer__list">
             <li className="footer__list-item">
@@ -19,12 +22,9 @@ class Footer extends Component {
             <li className="footer__list-item">
               {this.props.t("footer.section1.paragraph2")}
             </li>
-            <li className="footer__list-item">
-              {this.props.t("footer.section1.paragraph3")}
-            </li>
-            <li className="footer__list-item">
-              {this.props.t("footer.section1.paragraph4")}
-            </li>
+            <button className="button__footer">
+              {this.props.t("footer.section1.button")}
+            </button>
           </ul>
         </div>
 

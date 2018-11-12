@@ -13,7 +13,9 @@ const NavMobile = props => {
   return (
     <nav className={drawerClasses}>
       <NavigationItems className="hello" />
-      <LangItems />
+      <div className="nav__lang--mob">
+        <LangItems />
+      </div>
     </nav>
   );
 };

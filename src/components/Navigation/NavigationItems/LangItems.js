@@ -7,24 +7,9 @@ class NavbarLangItems extends Component {
     const { i18n } = this.props;
     return (
       <React.Fragment>
-        <a
-          className="navbar__languages__item"
-          onClick={() => i18n.changeLanguage("en")}
-        >
-          en
-        </a>
-        <a
-          className="navbar__languages__item"
-          onClick={() => i18n.changeLanguage("pt")}
-        >
-          pt
-        </a>
-        <a
-          className="navbar__languages__item"
-          onClick={() => i18n.changeLanguage("es")}
-        >
-          es
-        </a>
+        <a onClick={() => i18n.changeLanguage("en")}>en</a>
+        <a onClick={() => i18n.changeLanguage("pt")}>pt</a>
+        <a onClick={() => i18n.changeLanguage("es")}>es</a>
       </React.Fragment>
     );
   }
