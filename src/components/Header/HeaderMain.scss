@@ -16,48 +16,26 @@
     url(./header_photo.jpg);
 
   background-position: center;
-  //   clip-path: polygon(100% 0, 100% 100%, 0% 100%, 0% 0);
 }
 
-.header__text {
+.header__text__container {
   grid-column: 2/-1;
   grid-row-start: 5;
-
   padding-left: 5vw;
-  letter-spacing: 1.2rem;
-  font-size: 3rem;
-}
-
-.heading__primary {
-  color: $color-white;
-  font-size: 5rem;
-  font-weight: 700;
-}
-
-.red {
-  color: $color-secondary;
-}
-
-.heading__primary--main {
-  display: block;
 }
 
 .button__header {
-  color: #f3f3f3;
-  font-weight: 400;
   background-color: $color-secondary;
   border: 0.2rem solid $color-secondary;
 
   &:hover {
-    background-color: #b61827;
-    border: 0.2rem solid #b61827;
+    background-color: $color-secondary-dark;
+    border: 0.2rem solid $color-secondary-dark;
   }
 }
 
 @media (max-width: 769px) {
   .header__text {
     grid-row-start: 8;
-    letter-spacing: 0.5rem;
-    font-size: 1rem;
   }
 }

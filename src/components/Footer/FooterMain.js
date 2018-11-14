@@ -9,39 +9,33 @@ import { translate } from "react-i18next";
 class Footer extends Component {
   render() {
     return (
-      <div className="footer__sections">
+      <section className="footer__sections">
         <div className="footer__section">
-          <div className="footer__header">
-            {/* <a href="https://www.linkedin.com/company/ez4u/">
-              <Icon name="logo" className="footer__logo" alt="EZ4U logo" />
-            </a> */}
-            {this.props.t("footer.section1.head")}
-          </div>
+          <h4>{this.props.t("footer.section1.head")}</h4>
           <ul className="footer__list">
             <li className="footer__list-item">
               {this.props.t("footer.section1.paragraph1")}
             </li>
-            <button className="button__footer">
-              <NavLink to="/contact">
-                {this.props.t("footer.section1.button")}
-              </NavLink>
-            </button>
           </ul>
+
+          <button className="button__footer">
+            <NavLink to="/contact">
+              {this.props.t("footer.section1.button")}
+            </NavLink>
+          </button>
         </div>
 
         <div className="footer__section">
-          <div className="footer__header">
-            {this.props.t("footer.section2.head")}
-          </div>
+          <h4>{this.props.t("footer.section2.head")}</h4>
           <ul className="footer__list">
-            <NavigationItems />
+            <div className="footer__list-item">
+              <NavigationItems />
+            </div>
           </ul>
         </div>
 
         <div className="footer__section">
-          <div className="footer__header">
-            {this.props.t("footer.section3.head")}
-          </div>
+          <h4>{this.props.t("footer.section3.head")}</h4>
           <ul className="footer__list">
             <li className="footer__list-item">
               {this.props.t("footer.section3.paragraph1")}
@@ -59,17 +53,15 @@ class Footer extends Component {
         </div>
 
         <div className="footer__section">
-          <div className="footer__header">
-            {this.props.t("footer.section4.head")}
-          </div>
+          <h4>{this.props.t("footer.section4.head")}</h4>
           <ul className="footer__list">
-            <li className="footer__list-item-subhead">
+            <li className="footer__list-item">
               {this.props.t("footer.section4.paragraph1")}
             </li>
             <li className="footer__list-item footer__link">
               {this.props.t("footer.section4.paragraph2")}
             </li>
-            <li className="footer__list-item-subhead">
+            <li className="footer__list-item">
               {this.props.t("footer.section4.paragraph3")}
             </li>
             <li className="footer__list-item">
@@ -80,10 +72,10 @@ class Footer extends Component {
                 {this.props.t("footer.section4.paragraph4")}
               </a>
             </li>
-            <li className="footer__list-item-subhead">
+            <li className="footer__list-item">
               {this.props.t("footer.section4.paragraph5")}
             </li>
-            <li className="footer__list-item footer__link">
+            <li className="footer__list-item">
               <a
                 className="footer__link"
                 href="mailto:{this.props.t('footer.section4.paragraph6')}"
@@ -93,7 +85,7 @@ class Footer extends Component {
             </li>
           </ul>
         </div>
-      </div>
+      </section>
     );
   }
 }

@@ -154,43 +154,32 @@ class FeaturesItems extends Component {
     return (
       <section className="features__section">
         <div className="features__text__container">
-          <div>
-            <p className="features__intro__heading">
-              Super admin account let's you manage as many vendors as you need
-              to!{" "}
-            </p>
-          </div>
-          <div>
-            <p className="features__intro__subheading">
-              Customize and white label everything to your preferece with global
-              settings. Use an iFrame for proof of concept and leverage our API
-              to lunch when you are ready.
-            </p>
-          </div>
+          <h2>{this.props.t("features.head")}</h2>
+          <p className="subheading">{this.props.t("features.subhead")}</p>
         </div>
         <div className="features__details__grid">
           {features.map(
             (feature, index) =>
               visibleFeature === feature.id && (
-                <div key={index} className="feature__details__container">
-                  <p className="feature__heading" id={features.id}>
-                    #{feature.name}
-                  </p>
-                  <p className="feature__paragraph" id={features.id}>
-                    _{feature.feature1}
-                  </p>
-                  <p className="feature__paragraph" id={features.id}>
-                    _{feature.feature2}
-                  </p>
-                  <p className="feature__paragraph" id={features.id}>
-                    _{feature.feature3}
-                  </p>
-                  <p className="feature__paragraph" id={features.id}>
-                    _{feature.feature4}
-                  </p>
-                  <p className="feature__paragraph" id={features.id}>
-                    _{feature.feature5}
-                  </p>
+                <div key={index} className="feature__details">
+                  <h3 id={features.id}>#{feature.name}</h3>
+                  <div className="feature__details__container">
+                    <p className="feature__paragraph" id={features.id}>
+                      _{feature.feature1}
+                    </p>
+                    <p className="feature__paragraph" id={features.id}>
+                      _{feature.feature2}
+                    </p>
+                    <p className="feature__paragraph" id={features.id}>
+                      _{feature.feature3}
+                    </p>
+                    <p className="feature__paragraph" id={features.id}>
+                      _{feature.feature4}
+                    </p>
+                    <p className="feature__paragraph" id={features.id}>
+                      _{feature.feature5}
+                    </p>
+                  </div>
                 </div>
               )
           )}
@@ -198,7 +187,7 @@ class FeaturesItems extends Component {
             {buttons.map(button => (
               <div key={button.id} className="feature__container">
                 <span onClick={() => this.toggleHidden(button.id)}>
-                  <div className="feature__name">{button.name}</div>
+                  <h3 className="feature__name">{button.name}</h3>
                   <Icon
                     name={button.iconName}
                     className="feature__icon"

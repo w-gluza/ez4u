@@ -7,9 +7,11 @@
     "blog": "Blog"
   },
   "header": {
-    "heading": "Your headign goes here",
-    "subheading": "your cool subheading goes hear",
-    "button": "button"
+    "head1": "SMS",
+    "head2": "MARKETING",
+    "subhead1": "TELECOM",
+    "subhead2": "SOFTWARE",
+    "button": "Let's talk"
   },
   "sms": {
     "name": "SMS",
@@ -123,7 +125,25 @@
       "paragraph6": "suporte@ez4uteam.com"
     }
   },
-  "footerfooter": {
-    "credentials": "EN/ES/PT"
+  "featureClients": {
+    "head": "They trusted us!"
+  },
+  "features": {
+    "head": "Heading of the Company Features goes here please write something cool!",
+    "subhead": "Subheading of the Company Features goes here please write something cool! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
+  },
+  "portfolio": {
+    "head": "Heading of the Company PORTFOLIO goes here please write something cool!",
+    "subhead": "Subheading of the Company PORTFOLIO goes here please write something cool! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
+  },
+  "testimonials": {
+    "testimonial1": "The EZ4U SMS messaging platform supports the weekly communication needs of E. Leclerc stores in Portugal. The high message processing and delivery capacity has been, and continues to be, a preponderant reason for the selection of the EZ4U as our partner",
+    "author1": "Filipe Machado – CooplecNorte, E.Leclerc Portugal",
+    "testimonial2": "The recurring need of permanent contact with clients in the tourism sector has led, regarding SMS sending, to adopt and integrate EZ4U's solutions. We have already carried out, in an integrated way, several marketing campaigns and transactional trigger implementation, with critical time restrictions.",
+    "author2": "Fernando Morte - Information Systems – Viagens Abreu",
+    "testimonial3": "EZ4U is one of our reference partners, and its SMS solution is fully integrated in our Optical, Health and Social Economy Management solutions. This integration has had high levels of adoption by our customers, representing an added value to our global offer.",
+    "author3": "João Oliveira – Business Director – F3M",
+    "testimonial4": "The adoption of the EZ4U solutions in the scope of SMS communications has translated into an increase in operational efficiency in all Grupo Gocial companies. Activation and migration of EZ4U services was fast and in perfect coordination with our technical and Marketing teams.",
+    "author4": "Ricardo Gonçalves – Grupo Gocial Manager"
   }
 }

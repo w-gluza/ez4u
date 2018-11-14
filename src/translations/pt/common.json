@@ -7,9 +7,11 @@
     "blog": "Blog"
   },
   "header": {
-    "heading": "Your headign goes here",
-    "subheading": "your cool subheading goes hear",
-    "button": "button"
+    "head1": "PT SMS",
+    "head2": "MARKETING",
+    "subhead1": "TELECOM",
+    "subhead2": "SOFTWARE",
+    "button": "Vamos conversar"
   },
   "sms": {
     "name": "SMS",
@@ -28,7 +30,7 @@
     "feature5": "Vários Métodos de Pagamento"
   },
   "inbox": {
-    "name": "Inbound Channels",
+    "name": "Canais Recepção",
     "feature1": "Sed ut perspiciatis unde omnis",
     "feature2": "At vero eos et accusamus et iusto ",
     "feature3": "Nam libero tempore, cum soluta nobis est",
@@ -60,7 +62,7 @@
     "feature5": "Vários Métodos de Pagamento"
   },
   "geolocation": {
-    "name": "Geolocation",
+    "name": "Geo Localização",
     "feature1": "Redireccionamento Tráfego Físico",
     "feature2": "Campanhas em Tempo Real",
     "feature3": "Efeitos Imediatos",
@@ -100,17 +102,11 @@
   "footer": {
     "section1": {
       "head": "EZ4U",
-      "paragraph1": "Description goes here",
-      "paragraph2": "Lorem ipsum dolores",
-      "paragraph3": "em does",
-      "paragraph4": "singla de si"
+      "paragraph1": "Portuguese description of EZ4U goes here. lorem ipsum dolor sit amet consectetur adipiscing elit. lorem ipsum dolor sit amet consectetur adipiscing elit",
+      "button": "Conversar"
     },
     "section2": {
-      "head": "Products",
-      "paragraph1": "Geolocation",
-      "paragraph2": "API",
-      "paragraph3": "White Label",
-      "paragraph4": "Control and Stats"
+      "head": "PT Site Map"
     },
     "section3": {
       "head": "Blog",
@@ -129,7 +125,25 @@
       "paragraph6": "suporte@ez4uteam.com"
     }
   },
-  "footerfooter": {
-    "credentials": "Todos os direitos reservados"
+  "featureClients": {
+    "head": "PT They trusted us!"
+  },
+  "features": {
+    "head": "PT Heading of the Company Features goes here please write something cool!",
+    "subhead": "PT Subheading of the Company Features goes here please write something cool! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
+  },
+  "portfolio": {
+    "head": "PT Super admin account let's you manage as many vendors as you need to!",
+    "subhead": "PT Customize and white label everything to your preferece with global settings. Use an iFrame for proof of concept and leverage our AP to lunch when you are ready."
+  },
+  "testimonials": {
+    "testimonial1": "PORTUGESE The EZ4U SMS messaging platform supports the weekly communication needs of E. Leclerc stores in Portugal. The high message processing and delivery capacity has been, and continues to be, a preponderant reason for the selection of the EZ4U as our partner",
+    "author1": "PT Filipe Machado – CooplecNorte, E.Leclerc Portugal",
+    "testimonial2": "PT The recurring need of permanent contact with clients in the tourism sector has led, regarding SMS sending, to adopt and integrate EZ4U's solutions. We have already carried out, in an integrated way, several marketing campaigns and transactional trigger implementation, with critical time restrictions.",
+    "author2": "PT Fernando Morte - Information Systems – Viagens Abreu",
+    "testimonial3": "PT EZ4U is one of our reference partners, and its SMS solution is fully integrated in our Optical, Health and Social Economy Management solutions. This integration has had high levels of adoption by our customers, representing an added value to our global offer.",
+    "author3": "PT João Oliveira – Business Director – F3M",
+    "testimonial4": "PT The adoption of the EZ4U solutions in the scope of SMS communications has translated into an increase in operational efficiency in all Grupo Gocial companies. Activation and migration of EZ4U services was fast and in perfect coordination with our technical and Marketing teams.",
+    "author4": "PT Ricardo Gonçalves – Grupo Gocial Manager"
   }
 }

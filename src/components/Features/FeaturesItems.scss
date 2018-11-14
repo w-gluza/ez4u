@@ -5,6 +5,20 @@
 
 .features__text__container {
   padding: 5%;
+  h2 {
+    padding: 0 13% 0 13%;
+  }
+  p {
+    padding: 0 5% 0 5%;
+  }
+
+  @include respond(phone) {
+    p,
+    h2 {
+      padding: 0;
+      padding-bottom: 5%;
+    }
+  }
 }
 
 .features__details__grid {
@@ -13,11 +27,6 @@
 
   box-shadow: 0 1rem 2rem rgba($color-black, 0.19),
     0 0.6rem 0.6rem rgba($color-black, 0.23);
-}
-
-.features__details {
-  padding: 3rem;
-  background-color: $color-primary;
 }
 
 //contains all the feature__containers
@@ -40,70 +49,27 @@
   &:hover {
     border-bottom: 0.2rem solid $color-primary;
   }
-}
 
-.feature__name,
-.feature__name a {
-  text-transform: uppercase;
-  color: $color-blue-dark;
-  font-weight: 700;
-  font-size: 1.2rem;
-  line-height: 1.6rem;
-  text-decoration: none;
-  letter-spacing: 0.2rem;
+  &:active {
+    border-bottom: 0.2rem solid $color-primary;
+  }
 }
 
 .feature__icon {
   width: 5rem;
   fill: $color-primary;
+  cursor: pointer;
 }
-.feature__details__container {
+.feature__details {
   padding: 3rem;
   background-color: $color-primary;
-  min-height: 40rem;
+  min-width: 35rem;
 }
-
-.feature__heading {
-  padding: 1rem;
-  text-transform: uppercase;
-  color: $color-secondary;
-  color: rgba($color-blue-dark, 0.6);
-  font-weight: 500;
-  font-size: 3rem;
-  line-height: 3.6rem;
-  padding-bottom: 1rem;
-  text-decoration: none;
-  letter-spacing: 0.3rem;
-}
-.feature__paragraph {
-  padding: 1rem;
-  color: $color-white;
-  font-weight: 300;
-  font-size: 1.5rem;
-  line-height: 2rem;
-  text-decoration: none;
-  letter-spacing: 0.25rem;
+.feature__details__container {
+  padding-top: 2rem;
 }
 
 // Styling of short description at the top of features section
-.features__intro__heading {
-  letter-spacing: 0.18rem;
-  font-size: 2.4rem;
-  font-weight: 700;
-  text-align: center;
-  padding-bottom: 1rem;
-  color: rgba($color-blue-dark, 0.9);
-  padding: 0 13% 2rem 13%;
-}
-
-.features__intro__subheading {
-  letter-spacing: 0.15rem;
-  font-size: 1.5rem;
-  font-weight: 500;
-  text-align: center;
-  color: rgba($color-blue-dark, 0.6);
-  padding: 0 5% 0 5%;
-}
 
 @media (max-width: 769px) {
   .features__section {
@@ -113,11 +79,7 @@
     grid-template-columns: 1fr;
   }
 
-  .features__intro__heading {
-    padding: 0 0 2rem 0;
-  }
-
-  .features__intro__subheading {
+  .subheading {
     padding: 0;
   }
 }

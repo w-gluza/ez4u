@@ -9,16 +9,20 @@ class HeaderMain extends Component {
       <header className="header">
         <div className="header__img " />
 
-        <div className="header__text">
-          <h1 className="heading__primary">
-            <span className="heading__primary--main">
-              <span className="red">SMS</span> MARKETING
-            </span>
-            <span className="heading__primary--main">
-              <span className="red">WEB</span> DESIGN
-            </span>
+        <div className="header__text__container">
+          <h1>
+            <span className="header__span">{this.props.t("header.head1")}</span>{" "}
+            {this.props.t("header.head2")}
           </h1>
-          <button className="button__header">Let's talk!</button>
+          <h1>
+            <span className="header__span">
+              {this.props.t("header.subhead1")}
+            </span>{" "}
+            {this.props.t("header.subhead2")}
+          </h1>
+          <button className="button__header">
+            {this.props.t("header.button")}
+          </button>
         </div>
       </header>
     );
