@@ -1,9 +1,25 @@
-.burgerBar {
-  width: 100%;
-  background-color: $color-grey-light;
-  position: relative;
+@include respond(phone) {
+  .burger__button__line {
+    position: relative;
+    width: 3rem;
+    height: 1px;
+    background: $color-grey-dark;
+    top: 10px;
+    left: 10px;
+    margin-bottom: 10px;
+    transition: transform(rotate(45deg));
+    z-index: 500;
+  }
+  .mobile__navbar {
+    width: 100%;
+    background-color: red;
+    position: absolute;
+    height: 50px;
+    z-index: 2;
+  }
 }
 .burger__button {
+  position: relative;
   background: transparent;
   border: none;
   cursor: pointer;
@@ -11,16 +27,6 @@
   padding: 5px;
   &:burger__button:focus {
     outline: none;
-  }
-}
-
-@include respond(phone) {
-  .burger__button__line {
-    width: 30px;
-    height: 1px;
-    background: $color-grey-dark;
-    margin: 10px;
-    transition: transform(rotate(45deg));
   }
 }
 

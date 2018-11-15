@@ -7,9 +7,6 @@
   position: fixed;
   transform: translateX(-100%);
   transition: all 0.5s ease 0s;
-
-  background: rgba($color-white, 0.8);
-  box-shadow: 0 1px 5px rgba($color-black, 0.25);
 }
 
 .nav__mobile:checked {
@@ -53,4 +50,8 @@
   display: grid;
   grid-template-rows: 4fr 2fr;
   padding-top: 15%;
+  background: rgba($color-white, 0.8);
+  height: 100vh;
+  background: rgba($color-white, 0.8);
+  box-shadow: 0 1px 5px rgba($color-black, 0.25);
 }

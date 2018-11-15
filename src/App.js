@@ -55,28 +55,28 @@ class App extends React.Component {
             <div className="toolbar__toggle-button">
               <BurgerButton click={this.BurgerButtonClickHandler} />
             </div>
-          </Headroom>
-          <NavMobile show={this.state.NavMobileOpen} />
-          {!this.state.NavMobileOpen ? (
-            <div
-              // className="burger__button"
-              onClick={this.BurgerButtonClickHandler}
-            >
-              <div className="burger__button__line" />
-              <div className="burger__button__line" />
-              <div className="burger__button__line" />
-            </div>
-          ) : null}
+            <NavMobile show={this.state.NavMobileOpen} />
+            {!this.state.NavMobileOpen ? (
+              <div
+                className="burger__button"
+                onClick={this.BurgerButtonClickHandler}
+              >
+                <div className="burger__button__line" />
+                <div className="burger__button__line" />
+                <div className="burger__button__line" />
+              </div>
+            ) : null}
 
-          {this.state.NavMobileOpen ? (
-            <div
-              className="cross__button"
-              onClick={this.CrossButtonClickHandler}
-            >
-              <div className="cross__button__line" />
-              <div className="cross__button__line" />
-            </div>
-          ) : null}
+            {this.state.NavMobileOpen ? (
+              <div
+                className="cross__button"
+                onClick={this.CrossButtonClickHandler}
+              >
+                <div className="cross__button__line" />
+                <div className="cross__button__line" />
+              </div>
+            ) : null}
+          </Headroom>
 
           <main className={blurredClasses}>
             <Route exact path="/" component={Header} />
