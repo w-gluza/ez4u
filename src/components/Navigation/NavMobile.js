@@ -12,10 +12,15 @@ const NavMobile = props => {
 
   return (
     <nav className={drawerClasses}>
-      <NavigationItems className="hello" />
-      <div className="nav__lang--mob">
-        <LangItems />
-      </div>
+      <nav className="nav__items__container">
+        {/* <div className="burger__bar" /> */}
+        <div className="nav__items__mob">
+          <NavigationItems />
+        </div>
+        <div className="nav__lang--mob">
+          <LangItems />
+        </div>
+      </nav>
     </nav>
   );
 };
